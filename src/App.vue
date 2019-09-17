@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+      <p>Nagłówek</p>
         <router-link to="/">Start</router-link>
         <router-link to="/warki">Warki</router-link>
         <router-link to="/receptury">Receptury</router-link>
