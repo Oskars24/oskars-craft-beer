@@ -1,4 +1,5 @@
-// vue.config.js
 module.exports = {
-    publicPath: '<oskars-craft-beer>'
-    }
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/oskars-craft-beer/'
+    : '/'
+}
