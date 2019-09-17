@@ -10,6 +10,7 @@ import kontakt from '@/components/kontakt'
 Vue.use(Router)
 
 export default new Router({
+  //base: "/test/", // tylko w przypadku migracji na github pages
   routes: [
     {
       path: '/',
