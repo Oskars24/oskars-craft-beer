@@ -15,8 +15,14 @@ export default {
 }
 </script>
 
+<style>
+    .beerNav > .router-link-exact-active:first-child ~ .glass {
+        transform: translateY(7px) translateX(calc((70vw - 200px) / 12*-5 - 100px)) perspective(60px) rotateX(-15deg);
+    }
+</style>
+
 <style scoped>
     h1 {
-      color: red;
+        color: red;
     }
 </style>

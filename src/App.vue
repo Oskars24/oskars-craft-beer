@@ -74,8 +74,8 @@ export default {
 </script>
 
 <style>
-    @font-face {font-family: "SteakSmoked"; src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot"); src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff") format("woff"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.svg#SteakSmoked") format("svg"); }
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@font-face {font-family: "SteakSmoked"; src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot"); src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff") format("woff"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.svg#SteakSmoked") format("svg"); }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 .all {
     display: grid;
@@ -123,6 +123,10 @@ export default {
     line-height: 1.5;
 }
 
+.footerMenu > span:active {
+    color: #fff152;
+}
+
 .myAvatar {
     width: 116px;
     border-radius: 50%;
@@ -136,7 +140,7 @@ export default {
     width: 70vw;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(90px, 1fr)) 200px repeat(3, minmax(90px, 1fr));
+    grid-template-columns: repeat(3, minmax(60px, 1fr)) 200px repeat(3, minmax(60px, 1fr));
     grid-template-rows: 90px 70px;
     justify-content: center;
     align-content: start;
@@ -263,6 +267,7 @@ export default {
 .textMenu {
     font-weight: bold;
     font-size: 15px;
+    transform: rotate(-15deg);
 }
 
 .glass {
@@ -294,7 +299,14 @@ export default {
 }
 
 .lewarek:hover > .textMenu {
+    transform: rotate(0deg);
     text-shadow: 3px 1px 1px #fff152;
+}
+
+.lewarek:active > .textMenu {
+    transform: rotate(0deg);
+    text-shadow: 0px 0px 3px #1D1D1B;
+    color: #fff152;
 }
 
 .lewarek:hover > .rod {
@@ -342,6 +354,36 @@ export default {
 
 .beerNav > .lewarek:nth-child(7):hover ~ .glass {
     transform: translateY(7px) translateX(calc((70vw - 200px) / 12*5 + 100px)) perspective(60px) rotatex(-15deg);
+}
+
+.router-link-exact-active:hover > .rod {
+    transform: none;
+}
+
+.router-link-exact-active:hover > .wheel:after{
+    animation: paused; 
+}
+
+.router-link-exact-active:hover > .wheel:before{
+    animation: paused; 
+}
+
+.router-link-exact-active:hover > .tap:after {
+    animation: paused;
+}
+
+.router-link-exact-active:hover > .textMenu {
+    transform: rotate(-15deg);
+    text-shadow: 3px 1px 1px #fff152;
+}
+
+.beerNav > .router-link-exact-active ~ .glass:before {
+    transform: translateY(5px);
+}
+
+.beerNav > .router-link-exact-active:hover ~ .glass:before {
+    transform: translateY(5px);
+    animation: paused;
 }
 
 @keyframes wheelRotation {
