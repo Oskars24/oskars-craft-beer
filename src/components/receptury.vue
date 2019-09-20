@@ -9,20 +9,22 @@ export default {
   name: 'receptury',
   data () {
     return {
-      msg: 'Witaj w receptury.vue'
+      msg: 'Witaj w warki.vue'
     }
+  },
+
   }
-}
+
 </script>
 
 <style>
     .beerNav > .router-link-exact-active:nth-child(3) ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*-1 - 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-1 - 100px)) perspective(60px) rotatex(-15deg);
     }
 </style>
 
 <style scoped>
     h1 {
-      color: green;
+      color: gold;
     }
 </style>

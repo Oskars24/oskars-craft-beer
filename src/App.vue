@@ -77,10 +77,15 @@ export default {
 @font-face {font-family: "SteakSmoked"; src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot"); src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff") format("woff"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.svg#SteakSmoked") format("svg"); }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+:root {
+    --globalWidth: 70vw;
+}
+
 .all {
     display: grid;
     justify-content: center;
     align-content: start;
+    grid-template-columns: var(--globalWidth);
     grid-template-rows: 1fr auto 1fr;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -137,10 +142,10 @@ export default {
 }
 
 .beerNav {
-    width: 70vw;
+    width: var(--globalWidth);
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(60px, 1fr)) 200px repeat(3, minmax(60px, 1fr));
+    grid-template-columns: repeat(3, minmax(50px, 1fr)) 200px repeat(3, minmax(50px, 1fr));
     grid-template-rows: 90px 70px;
     justify-content: center;
     align-content: start;
@@ -268,6 +273,7 @@ export default {
     font-weight: bold;
     font-size: 15px;
     transform: rotate(-15deg);
+    transition: transform 0.15s linear;
 }
 
 .glass {
@@ -276,7 +282,7 @@ export default {
     height: 70px;
     border: solid #1D1D1B 6px; 
     position: relative;
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*-5 - 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotatex(-15deg);
     overflow: hidden;
     z-index: -1;
     grid-column: 1 / 8;
@@ -333,27 +339,27 @@ export default {
 }
 
 .beerNav > .lewarek:first-child:hover ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*-5 - 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotatex(-15deg);
 }
 
 .beerNav > .lewarek:nth-child(2):hover ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*-3 - 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 - 100px)) perspective(60px) rotatex(-15deg);
 }
 
 .beerNav > .lewarek:nth-child(3):hover ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*-1 - 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-1 - 100px)) perspective(60px) rotatex(-15deg);
 }
 
 .beerNav > .lewarek:nth-child(5):hover ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*1 + 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*1 + 100px)) perspective(60px) rotatex(-15deg);
 }
 
 .beerNav > .lewarek:nth-child(6):hover ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*3 + 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*3 + 100px)) perspective(60px) rotatex(-15deg);
 }
 
 .beerNav > .lewarek:nth-child(7):hover ~ .glass {
-    transform: translateY(7px) translateX(calc((70vw - 200px) / 12*5 + 100px)) perspective(60px) rotatex(-15deg);
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*5 + 100px)) perspective(60px) rotatex(-15deg);
 }
 
 .router-link-exact-active:hover > .rod {
@@ -401,5 +407,17 @@ export default {
     7.7% {transform: scaleY(1);}
     92.3% {transform: scaleY(1);}
 	100% {transform: scaleY(0); transform-origin: bottom;}
+}
+
+@media (max-width: 715px) {
+    :root {
+        --globalWidth: 98vw;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --globalWidth: 98vw;
+    }
 }
 </style>
