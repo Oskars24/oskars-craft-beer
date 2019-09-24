@@ -1,14 +1,50 @@
 [
-  "1. Winter Ale",
-  "2. Biere Blanche",
-  "3. Coffe Sweet Staut",
-  "4. American Wheat",
-  "5. Milkshake IPA Mango",
-  "6. White IPA",
-  "7. Bohemskie Ciemne",
-  "8. Milkshake IPA Mango & Orange",
-  "9. New Zeland Wheat",
-  "10. Saison",
-  "11. Witbier Fresh Orange",
-  "12. Witbier Fresh Orange II"
+  {
+    "title": "Winter Ale",
+    "id": 1
+  },
+  {
+    "title": "Biere Blanche",
+    "id": 2
+  },
+  {
+    "title": "Coffe Sweet Staut",
+    "id": 3
+  },
+  {
+    "title": "American Wheat",
+    "id": 4
+  },
+  {
+    "title": "Milkshake IPA Mango",
+    "id": 5
+  },
+  {
+    "title": "White IPA",
+    "id": 6
+  },
+  {
+    "title": "Bohemskie Ciemne",
+    "id": 7
+  },
+  {
+    "title": "Milkshake IPA Mango & Orange",
+    "id": 8
+  },
+  {
+    "title": "New Zeland Wheat",
+    "id": 9
+  },
+  {
+    "title": "Saison",
+    "id": 10
+  },
+  {
+    "title": "Witbier Fresh Orange",
+    "id": 11
+  },
+  {
+    "title": "Witbier Fresh Orange II",
+    "id": 12
+  }
 ]

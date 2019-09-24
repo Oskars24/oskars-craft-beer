@@ -2,10 +2,10 @@
     <div class="startPage">
         <div class="sliderContainer">
             <transition-group class='slider' tag="div">
-                <div class="sliderBottle" v-for="(beer, index) in beerList" :key="beer">
+                <div class="sliderBottle" v-for="beer in beerList" :key="beer.id">
                     <router-link to="/" tag="div" class="oneBeerDiv">
-                        <img :src="bottleSrc(index+1)">
-                        <span>{{ beer }}</span>
+                        <img class="sliderBeerImg" :src="bottleSrc(beer.id)">
+                        <span class="sliderBeerText">{{ beer.title }}</span>
                     </router-link>
                 </div>
             </transition-group>
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style>
-    .beerNav > .router-link-exact-active:first-child ~ .glass {
+    .beerNav > .router-link-active:first-child ~ .glass {
         transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotateX(-15deg);
     }
 </style>
@@ -70,6 +70,7 @@ export default {
         display: flex;
         justify-content: center;
         overflow: hidden;
+        border-bottom: solid #FA9C1E 2px;
     }
 
     .prev, .next {
@@ -80,7 +81,7 @@ export default {
         box-shadow: -7px 7px 0 0 #898988;
         border-radius: 4px;
         padding: 20px;
-        margin: 0 20px 0 20px;
+        margin: 0 30px 0 30px;
         transition: box-shadow 0.2s linear;
     }
 
@@ -97,7 +98,7 @@ export default {
     }
 
     .prev:active, .next:active {
-        box-shadow:  -7px 7px 0 0 #fff152 , -8px 10px 2px #fff152, -8px 10px 3px;
+        box-shadow:  -7px 7px 0 0 #fff152 , -8px 10px 2px #fff152;
     }
 
     .next{
@@ -111,13 +112,24 @@ export default {
         text-align: center;
         margin-left: 4vw;
         margin-right: 4vw;
-        transition: transform 1s ease-in-out;
+        transition: transform 0.5s ease-in-out;
     }
 
     .oneBeerDiv {
         transform: scale(0.7);
         opacity: 0.25;
-        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .sliderBeerText {
+        font-weight: bold;
+    }
+    .sliderBeerImg:hover {
+        filter: drop-shadow(3px 1px 0px #fff152);
+    }
+
+    .oneBeerDiv:hover > .sliderBeerText {
+        text-shadow: 3px 1px 1px #fff152;
     }
 
     .sliderBottle:first-of-type, .sliderBottle:last-of-type {

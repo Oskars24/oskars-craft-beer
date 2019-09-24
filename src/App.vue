@@ -1,7 +1,7 @@
 <template>
     <div class="all">
         <nav class="beerNav">
-            <router-link to="/" tag="div" class="lewarek">
+            <router-link to="/" tag="div" class="lewarek" exact>
                 <div class="rod"></div>
                 <div class="wheel"></div>
                 <div class="tap"></div>
@@ -19,7 +19,7 @@
                 <div class="tap"></div>
                 <div class="textMenu">RECEPTURY</div>
             </router-link>
-            <router-link to="/" tag="div" class="headerLogo">
+            <router-link to="/" tag="div" class="headerLogo" exact>
                 <span>Oskar's</span><br><span>Craft Beer</span>
             </router-link>
             <router-link to="/galeria" tag="div" class="lewarek">
@@ -52,7 +52,7 @@
                 <span>oskarsycz@gmail.com</span>
             </div>
             <div class="footerMenu">
-                <router-link to="/" tag="span">START</router-link>
+                <router-link to="/" tag="span" exact>START</router-link>
                 <router-link to="/warki" tag="span">WARKI</router-link>
                 <router-link to="/receptury" tag="span">RECEPTURY</router-link>
                 <router-link to="/galeria" tag="span">GALERIA</router-link>
@@ -133,12 +133,14 @@ export default {
 }
 
 .myAvatar {
-    width: 116px;
+    width: 90%;
+    max-width: 116px;
     border-radius: 50%;
 }
 
 .footerMap > img {
-    width: 200px;
+    width: 90%;
+    max-width: 200px;
 }
 
 .beerNav {
@@ -276,6 +278,8 @@ export default {
     transition: transform 0.15s linear;
 }
 
+
+
 .glass {
     box-sizing: border-box;
     width: 36px;
@@ -289,6 +293,12 @@ export default {
     transition: transform 0.25s linear;
 }
 
+@supports (-ms-ime-align: auto) { /*Tylko dla MS Edge, bo nie obsługuje kombinacji calc(var()) od 5 lat*/
+   .glass {
+       transition: none;
+    }
+}
+
 .glass:before {
     box-sizing: border-box;
     content: '';
@@ -297,7 +307,6 @@ export default {
 	height: 100%;
     background:  linear-gradient(90deg, #FA9C1C 0%, #FA9C1C 50%, #FBB049 50%, #FBB049 100%);
     transform: translateY(59px);
-    transition: transform 4s linear;
 }
 
 .lewarek:hover > .rod, .lewarek:hover > .tap, .lewarek:hover > .wheel {
@@ -362,32 +371,32 @@ export default {
     transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*5 + 100px)) perspective(60px) rotatex(-15deg);
 }
 
-.router-link-exact-active:hover > .rod {
+.router-link-active:hover > .rod {
     transform: none;
 }
 
-.router-link-exact-active:hover > .wheel:after{
+.router-link-active:hover > .wheel:after{
     animation: paused; 
 }
 
-.router-link-exact-active:hover > .wheel:before{
+.router-link-active:hover > .wheel:before{
     animation: paused; 
 }
 
-.router-link-exact-active:hover > .tap:after {
+.router-link-active:hover > .tap:after {
     animation: paused;
 }
 
-.router-link-exact-active:hover > .textMenu {
+.router-link-active:hover > .textMenu {
     transform: rotate(-15deg);
     text-shadow: 3px 1px 1px #fff152;
 }
 
-.beerNav > .router-link-exact-active ~ .glass:before {
+.beerNav > .router-link-active ~ .glass:before {
     transform: translateY(5px);
 }
 
-.beerNav > .router-link-exact-active:hover ~ .glass:before {
+.beerNav > .router-link-active:hover ~ .glass:before {
     transform: translateY(5px);
     animation: paused;
 }
@@ -415,9 +424,12 @@ export default {
     }
 }
 
-@media (max-width: 500px) {
-    :root {
-        --globalWidth: 98vw;
+@media (max-width: 510px) { /*Zmiana menu*/
+    .lewarek, .glass {
+        display: none;
+    }
+    .beerNav {
+        grid-template-columns: 1fr;
     }
 }
 </style>
