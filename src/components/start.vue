@@ -1,5 +1,6 @@
 <template>
     <div class="startPage">
+        <div>
         <div class="sliderContainer">
             <transition-group class='slider' tag="div">
                 <div class="sliderBottle" v-for="beer in beerList" :key="beer.id">
@@ -11,6 +12,31 @@
             </transition-group>
             <div class='prev' @click="previous"></div>
             <div class='next' @click="next"></div>
+            </div>
+            <div class="mainArticle">
+                <div class="articleImg"><img src="../assets/paper.png"></div>
+                <div class="articleTitle">SPRAWDŹ NASZE RECEPTURY!</div>
+                <div class="articleContent">
+                    <span class="articleText">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nisi nec eros suscipit mattis at et sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. d nisl egestas, cursus dolor rhoncus, mattis elit. <br><br>Maecenas et ullamcorper lacus, nec laoreet nulla. Sed augue nulla, dapibus sed massa vitae, efficitur dapibus turpis. Phasellus sit amet metus nunc.'</span>
+                    <router-link to="/receptury" tag="div" class="articleButton">Więcej...</router-link>
+                </div>
+            </div>
+            <div class="mainArticle">
+                <div class="equipTitle">SPRAWDZONY SPRZĘT!</div>
+                <div class="equipContent">
+                    <span class="articleText">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nisi nec eros suscipit mattis at et sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. d nisl egestas, cursus dolor rhoncus, mattis elit. <br><br>Maecenas et ullamcorper lacus, nec laoreet nulla. Sed augue nulla, dapibus sed massa vitae, efficitur dapibus turpis. Phasellus sit amet metus nunc.'</span>
+                    <router-link to="/browar" tag="div" class="articleButton">Więcej...</router-link>
+                </div>
+                <div class="equipImg"><img src="../assets/pot.png"></div>
+            </div>
+            <div class="mainGallery">
+                <div class="galleryLeft"></div>
+                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_28.jpg" class="galleryImg"></router-link>
+                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_11.jpg" class="galleryImg"></router-link>
+                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_34.jpg" class="galleryImg"></router-link>
+                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_37.jpg" class="galleryImg"></router-link>
+                <div class="galleryRight"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -45,107 +71,245 @@ export default {
 </script>
 
 <style>
-    .beerNav > .router-link-active:first-child ~ .glass {
-        transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotateX(-15deg);
-    }
+.beerNav > .router-link-active:first-child ~ .glass {
+    transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotateX(-15deg);
+}
 </style>
 
 <style scoped>
-    .startPage {
-        display: grid;
-        justify-content: center;
-        align-content: start;
-        grid-template-columns: 1fr;
-    }
+.startPage {
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    grid-template-columns: 100%;
+}
 
-    .sliderContainer {
-        display: grid;
-        position: relative;
-        justify-content: center;
-        align-content: start;
-        grid-template-columns: 1fr;
-    }
+.sliderContainer {
+    position: relative;
+}
 
-    .slider {
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        border-bottom: solid #FA9C1E 2px;
-    }
+.slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: solid #FA9C1E 2px;
+}
 
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(45deg);
-        box-shadow: -7px 7px 0 0 #898988;
-        border-radius: 4px;
-        padding: 20px;
-        margin: 0 30px 0 30px;
-        transition: box-shadow 0.2s linear;
-    }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: -7px 7px 0 0 #898988;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 30px 0 30px;
+    transition: box-shadow 0.2s linear;
+}
 
-    .prev:before, .next:before {
-        content: '';
-        position: absolute;
-        transform: translate(calc(-50% - 7px), calc(-50% + 7px));
-        width: 100%;
-        height: 100%;
-    }
+.prev:before, .next:before {
+    content: '';
+    position: absolute;
+    transform: translate(calc(-50% - 7px), calc(-50% + 7px));
+    width: 100%;
+    height: 100%;
+}
 
-    .prev:hover, .next:hover {
-        box-shadow: -7px 7px 0 0 #474745, -8px 10px 2px #fff152;
-    }
+.prev:hover, .next:hover {
+    box-shadow: -7px 7px 0 0 #474745, -8px 10px 2px #fff152;
+}
 
-    .prev:active, .next:active {
-        box-shadow:  -7px 7px 0 0 #fff152 , -8px 10px 2px #fff152;
-    }
+.prev:active, .next:active {
+    box-shadow:  -7px 7px 0 0 #fff152 , -8px 10px 2px #fff152;
+}
 
-    .next{
-        right: 0;
-        transform: translateY(-50%) rotate(-135deg);
-    }
+.next{
+    right: 0;
+    transform: translateY(-50%) rotate(-135deg);
+}
 
-    .sliderBottle {
-        pointer-events: none;
-        cursor: pointer;
-        text-align: center;
-        margin-left: 4vw;
-        margin-right: 4vw;
-        transition: transform 0.5s ease-in-out;
-    }
+.sliderBottle {
+    pointer-events: none;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    transition: transform 0.5s ease-in-out;
+}
 
-    .oneBeerDiv {
-        transform: scale(0.7);
-        opacity: 0.25;
-        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    }
+.oneBeerDiv {
+    transform: scale(0.7);
+    opacity: 0.25;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
-    .sliderBeerText {
-        font-weight: bold;
-    }
-    .sliderBeerImg:hover {
-        filter: drop-shadow(3px 1px 0px #fff152);
-    }
+.sliderBeerText {
+    font-weight: bold;
+}
 
-    .oneBeerDiv:hover > .sliderBeerText {
-        text-shadow: 3px 1px 1px #fff152;
-    }
+.sliderBeerImg:hover {
+    filter: drop-shadow(3px 1px 0px #fff152);
+}
 
-    .sliderBottle:first-of-type, .sliderBottle:last-of-type {
-        opacity: 0;
-    }
+.oneBeerDiv:hover > .sliderBeerText {
+    text-shadow: 3px 1px 1px #fff152;
+}
 
-    .sliderBottle:nth-child(5) > .oneBeerDiv, .sliderBottle:nth-child(7) > .oneBeerDiv{
-        transform: scale(0.8);
-        opacity: 0.5;
-    }
+.sliderBottle:first-of-type, .sliderBottle:last-of-type {
+    opacity: 0;
+}
 
-    .sliderBottle:nth-child(6) > .oneBeerDiv {
-        pointer-events: auto;
-        transform: scale(0.9);
-        opacity: 1;
-    }
+.sliderBottle:nth-child(5) > .oneBeerDiv, .sliderBottle:nth-child(7) > .oneBeerDiv{
+    transform: scale(0.8);
+    opacity: 0.5;
+}
 
+.sliderBottle:nth-child(6) > .oneBeerDiv {
+    pointer-events: auto;
+    transform: scale(0.9);
+    opacity: 1;
+}
 
+.mainArticle {
+    display: grid;
+    grid-template-columns: 5% repeat(4, 1fr) 5%;
+    grid-template-rows: 60px 1fr;
+    margin-top: 20px;
+}
+
+.articleImg {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    text-align: center;
+    padding: 10px 10% 10px 10%;
+    border-top: solid 2px #FA9C1E;
+    background: linear-gradient(#ffffff 0%, #ffffff 58px, #FBB049 58px, #FBB049 100%);
+}
+
+.articleImg > img, .equipImg > img  {
+    width: 100%;
+    max-width: 160px;
+}
+
+.articleTitle {
+    border-top: solid 2px #FA9C1E;
+    grid-column: 3/7;
+    padding: 15px 20px 0px 20px;
+    color: #707070;
+    font-size: 25px;
+}
+
+.articleContent {
+    grid-column: 3/7;
+    background-color: #FA9C1E;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.articleText {
+    margin-bottom: 10px;
+}
+
+.articleButton {
+    cursor: pointer;
+    margin: auto 0 0 auto;
+    border: solid 2px white;
+    padding: 2px 20px 2px 20px;
+    font-weight: bold;
+}
+
+.articleButton:hover {
+    background-color:  #80807E;
+}
+
+.articleButton:active {
+    color: #fff152;
+    border: solid 2px #fff152
+}
+
+.equipTitle {
+    grid-column: 1/5;
+    padding: 15px 20px 0px 20px;
+    color: white;
+    font-size: 25px;
+    background-color: #474745;
+}
+
+.equipContent {
+    grid-column: 1/5;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    background-color: #474745;
+}
+.equipImg {
+    grid-column: 5/7;
+    grid-row: 1/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10% 20px 10%;
+    background-color: #80807E;
+}
+
+.equipContent > .articleButton {
+    margin: auto auto 0 0;
+}
+
+.mainGallery {
+    display: grid;
+    grid-template-columns: 5% repeat(4, 1fr) 5%;
+    margin-top: 20px;
+}
+
+.galleryLeft {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #FA9C1E;
+    height: 100%;
+    margin-right: 6px;
+}
+
+.galleryRight {
+    grid-column: 6/7;
+    grid-row: 2/3;
+    background-color: #FA9C1E;
+    height: 100%;
+    margin-left: 6px;
+}
+
+.galleryContainer {
+    cursor: pointer;
+    grid-row: 2/3;
+    position: relative;
+    overflow: hidden;
+    margin: 12px 6px 12px 6px;
+    border: solid 8px #80807E;
+    background-color: #80807E;
+}
+
+.galleryContainer:hover {
+    box-shadow: 3px 1px 2px #fff152;
+}
+
+.galleryContainer:hover > .galleryImg {
+    transform: scale(0.625) translateY(-12.5%);
+}
+
+.galleryContainer:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.galleryImg {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    filter: grayscale(0.75);
+    transition: transform 0.4s ease-in-out;
+}
 </style>

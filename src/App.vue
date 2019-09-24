@@ -47,11 +47,11 @@
         <router-view/>
 
         <footer class="footer">
-            <div class="footerContact">
-                <img src="./assets/avatar.jpg" class="myAvatar">
-                <span>oskarsycz@gmail.com</span>
+            <div class="footerSection">
+                <router-link to="/kontakt" tag="img" :src="require('./assets/avatar.jpg')" class="myAvatar"></router-link>
+                <a href="mailto:oskarsycz@gmail.com">oskarsycz@gmail.com</a>
             </div>
-            <div class="footerMenu">
+            <div class="footerSection">
                 <router-link to="/" tag="span" exact>START</router-link>
                 <router-link to="/warki" tag="span">WARKI</router-link>
                 <router-link to="/receptury" tag="span">RECEPTURY</router-link>
@@ -59,8 +59,8 @@
                 <router-link to="/browar" tag="span">BROWAR</router-link>
                 <router-link to="/kontakt" tag="span">KONTAKT</router-link>
             </div>
-            <div class="footerMap">
-                <img src="./assets/map.png">
+            <div class="footerSection">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82436.12163873018!2d22.714016624592986!3d49.783642734213075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b7edf1fb668d1%3A0x1efc1701bb993ff0!2zUHJ6ZW15xZts!5e0!3m2!1spl!2spl!4v1569339802826!5m2!1spl!2spl" frameborder="0" allowfullscreen=""></iframe>
             </div>
             <div class="footerLine">Designed by Oskar's 2019</div>
         </footer>
@@ -91,6 +91,20 @@ export default {
     font-size: 14px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    color: #fff152;
+}
+
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -101,7 +115,7 @@ export default {
     border-bottom: solid #FA9C1E 2px;
 }
 
-.footerContact, .footerMenu, .footerMap  {
+.footerSection  {
     box-sizing: border-box;
     background-color: #474745;
     width: 100%;
@@ -122,23 +136,35 @@ export default {
     padding: 3px;
 }
 
-.footerMenu > span:hover {
+.footerSection > span:hover {
     cursor: pointer;
     font-weight: bold;
     line-height: 1.5;
 }
 
-.footerMenu > span:active {
+.footerSection > span:active{
     color: #fff152;
 }
 
 .myAvatar {
+    cursor: pointer;
     width: 90%;
     max-width: 116px;
+    margin: 10px;
     border-radius: 50%;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
 
-.footerMap > img {
+.myAvatar:hover {
+    box-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 2px -2px 0px #ffffff;
+    transform: scale(0.9);
+}
+
+.myAvatar:active {
+    box-shadow: 2px 2px 0px #fff152, -2px -2px 0px #fff152, -2px 2px 0px #fff152, 2px -2px 0px #fff152;
+}
+
+.footerSection > iframe {
     width: 90%;
     max-width: 200px;
 }
@@ -420,7 +446,7 @@ export default {
 
 @media (max-width: 715px) {
     :root {
-        --globalWidth: 98vw;
+        --globalWidth: 96vw;
     }
 }
 
