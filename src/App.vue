@@ -93,7 +93,7 @@ body {
     justify-content: center;
     align-content: start;
     grid-template-columns: var(--globalWidth);
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: auto;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -197,7 +197,7 @@ a:active {
 
 .beerNav {
     width: var(--globalWidth);
-    margin: auto;
+    margin: 20px 0 20px 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(50px, 1fr)) 200px repeat(3, minmax(50px, 1fr));
     grid-template-rows: 90px 70px;

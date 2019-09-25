@@ -1,0 +1,69 @@
+{
+    "id": 9,
+    "title": "New Zeland Wheat",
+    "styl": "American Wheat",
+    "ekstrakt": "10 BLG",
+    "alkohol": "ok. 4,5%",
+    "ibu": "?",
+    "dataw": "01.03.2019 r.",
+    "datar": "15.03.2019 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "18,8 l piwa z 23 l brzeczki",
+    "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus condimentum venenatis tempor, sapien velit vestibulum eros, non consequat est nulla in urna. Fusce fermentum ante vel congue sollicitudin. Interdum et malesu fames ac ante.",
+    "sklad": "słód: pszeniczny jasny Wayermann, pale ale Wayermann, pszeniczny ciemny Wayermann, zakwaszający, chmiel: Rakau",
+    "surowce": [
+        "Słód pszeniczny jasny Wayermann - 2 kg (55%)",
+        "Słód pale ale Wayermann - 1,35 kg (37%)",
+        "Słód pszeniczny ciemny Wayermann - 0,25 kg (7%)",
+        "Słód zakwaszający - 0,03 kg (1%)",
+        "Chmiel Rakau (α kwasy 9,0%) - 100g",
+        "Drożdże Safale US-05 - 11,5g"
+        ],
+    "zacieranie": [
+        "55°C - 15 min",
+        "64°C - 45 min",
+        "72°C - 10 min",
+        "wysładzanie wodą o ok. 78°C"
+        ],
+    "chemielenie": [
+        "Rakau 30g na 30 min",
+        "Rakau 35g przy 80°C",
+        "na zimno 3 dni przed rozlewem"
+        ],
+    "fermentacja": [
+        "burzliwa 7 dni w temp. 18°C",
+        "cicha 7 dni w temp. 20°C"
+        ],
+    "notatki": [
+        "uwarzono dnia 01.03.2019 r.",
+        "BLG końcowe 10,0",
+        "Drożdże zadane w 18°C",
+        "Czas chłodzenia 35 min",
+        "Czas całej operacji 6,5h",
+        "Pomiar BLG 10.03 1,5 BLG",
+        "Chmielenie na zimno w dniu 12.03",
+        "Rozlew w dniu 15.03",
+        "Refermentacja: 125mg glukozy rozpuszczone w 300 ml wody i dodane do fermentora",
+        "Uzyskano 31 butelek 0,5l i 10 butelek 0,33l (razem 18,8l)"
+        ],
+    "przepis": [
+        "Do garnka o pojemności 30 l wlać 12l wody i wsypać ześrutowane słody.",
+        "Ustalamy temperaturę na 52°C i czekamy 10 min.",
+        "Podgrzewamy zacier na 67°C i utrzymujemy przez 45 min.",
+        "W drugim garnku zaczynamy grzać wodę do wysładzania do 78°C.",
+        "Podnosimy temperaturę do 74°C i utrzymujemy przez 10min.",
+        "Przeprowadzamy próbę jodową i decydujemy czy zacierać dalej.",
+        "Podgrzewamy zacier do 78°C i przenosimy do filtracji.",
+        "Czekamy ok. 30min (aż złoże się ułoży).",
+        "Wysładzamy powoli wodą 78°C do uzyskania ok. 24l brzeczki.",
+        "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 20°C.",
+        "Gotujemy brzeczkę przez 60 min: a) W 30 min dodajemy 30g chmielu Rakau. b) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. c) W 50 min wkładamy chłodnicę do brzeczki.",
+        "Robimy starter drożdżowy (dodajemy drożdże do przygotowanej wcześniej wody).",
+        "Zaczynamy chłodzenie przy minimalnym ciśnieniu wody.",
+        "Przy 80°C dodajemy 35g chmielu Rakau.",
+        "Chłodzimy brzeczkę do 17°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże: a) przed dodaniem drożdży pobieramy próbkę i mierzymy BLG.",
+        "Fermentujemy przez ok. 7 dni, a następnie mierzymy BLG.",
+        "Jeśli BLG jest odpowiednio niskie przelewamy na cichą i zostawiamy na kolejne 7 dni. a) Po 4 dniach dodajemy pozostałe 35g chmielu Rakau. b) Po 3 dniach mierzymy BLG i decydujemy czy fermentować dalej.",
+        "Jeśli BLG jest odpowiednio niskie butelkujemy."
+        ]
+}

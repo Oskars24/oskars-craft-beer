@@ -1,0 +1,19 @@
+{
+    "id": 10,
+    "title": "Saison",
+    "styl": "",
+    "ekstrakt": "",
+    "alkohol": "",
+    "ibu": "",
+    "dataw": "",
+    "datar": "",
+    "miejsce": "",
+    "uzyskano": "",
+    "opis": "",
+    "surowce": ["", ""],
+    "zacieranie": ["", ""],
+    "chemielenie": ["", ""],
+    "fermentacja": ["", ""],
+    "notatki": ["", ""],
+    "przepis": ["", ""]
+}

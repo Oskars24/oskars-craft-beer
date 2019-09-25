@@ -1,9 +1,9 @@
 <template>
-    <div class="about">
+    <div class="kontaktPage">
         <div class="myphoto"><img src="../assets/myphoto.jpg"></div>
         <div class="contact"><strong>KONTAKT:</strong><br><a href="mailto:oskarsycz@gmail.com">oskarsycz@gmail.com</a><br><a href="https://github.com/Oskars24" target="_blank" rel="noopener noreferrer">github.com/Oskars24</a><br><a href="https://maps.google.com/maps?ll=49.783553,22.784057&z=10&t=m&hl=pl&gl=PL&mapclient=embed&q=Przemy%C5%9Bl" target="_blank" rel="noopener noreferrer">37-700, Przemyśl</a></div>
         <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82436.12163873018!2d22.714016624592986!3d49.783642734213075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b7edf1fb668d1%3A0x1efc1701bb993ff0!2zUHJ6ZW15xZts!5e0!3m2!1spl!2spl!4v1569339802826!5m2!1spl!2spl" frameborder="0" allowfullscreen=""></iframe></div>
-        <div class="omnieText"><strong>O MNIE:</strong><br> Mauris vel risus aliquet, iaculis ex et, congue sapien. Donec ac neque a erat aliquam cursus. Suspendisse dui dui, vulputate et sem vel, euismod dictum mauris. Aliquam eu magna at odio laoreet condimentum. Suspendisse posuere congue sollicitudin. Ut at convallis nulla.</div>
+        <div class="aboutMe"><strong>O MNIE:</strong><br> Mauris vel risus aliquet, iaculis ex et, congue sapien. Donec ac neque a erat aliquam cursus. Suspendisse dui dui, vulputate et sem vel, euismod dictum mauris. Aliquam eu magna at odio laoreet condimentum. Suspendisse posuere congue sollicitudin. Ut at convallis nulla.</div>
     </div>
 </template>
 
@@ -20,7 +20,7 @@ name: 'kontakt'
 </style>
 
 <style scoped>
-.about {
+.kontaktPage {
     display: grid;
     grid-template-columns: auto 160px 1fr;
     grid-template-rows: auto 1fr;
@@ -59,7 +59,7 @@ name: 'kontakt'
     width: 90%;
 }
 
-.omnieText {
+.aboutMe {
     grid-area: 2/2/3/-1;
     padding: 0 10px 10px 10px;
     color: white;
@@ -69,7 +69,7 @@ name: 'kontakt'
     .map {
         display:none;
     }
-    .myphoto, .contact, .omnieText {
+    .myphoto, .contact, .aboutMe {
         grid-column: 1/-1;
         grid-row: auto;
     }

@@ -47,7 +47,7 @@ export default {
     name: 'start',
     data () {
         return {
-        beerList: this.orderBeerList(require("@/content/list.json")),
+            beerList: this.orderBeerList(require("@/content/list.json")),
         }
     },
     methods: {
@@ -74,6 +74,25 @@ export default {
 <style>
 .beerNav > .router-link-active:first-child ~ .glass {
     transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotateX(-15deg);
+}
+
+.articleButton {
+    cursor: pointer;
+    margin: auto 0 0 auto;
+    border: solid 2px white;
+    padding: 2px 20px 2px 20px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.articleButton:hover {
+    background-color:  #ffffff80;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+.articleButton:active {
+    color: #fff152;
+    border: solid 2px #fff152
 }
 </style>
 
@@ -219,22 +238,6 @@ export default {
     margin-bottom: 10px;
 }
 
-.articleButton {
-    cursor: pointer;
-    margin: auto 0 0 auto;
-    border: solid 2px white;
-    padding: 2px 20px 2px 20px;
-    font-weight: bold;
-}
-
-.articleButton:hover {
-    background-color:  #80807E;
-}
-
-.articleButton:active {
-    color: #fff152;
-    border: solid 2px #fff152
-}
 
 .equipTitle {
     grid-column: 1/5;

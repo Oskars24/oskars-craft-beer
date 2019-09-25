@@ -1,0 +1,19 @@
+{
+    "id": 2,
+    "title": "Biere Blanche",
+    "styl": "",
+    "ekstrakt": "",
+    "alkohol": "",
+    "ibu": "",
+    "dataw": "",
+    "datar": "",
+    "miejsce": "",
+    "uzyskano": "",
+    "opis": "",
+    "surowce": ["", ""],
+    "zacieranie": ["", ""],
+    "chemielenie": ["", ""],
+    "fermentacja": ["", ""],
+    "notatki": ["", ""],
+    "przepis": ["", ""]
+}
