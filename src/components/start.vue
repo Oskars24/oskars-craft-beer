@@ -14,6 +14,7 @@
             <div class='next' @click="next"></div>
             </div>
             <div class="mainArticle">
+                <div class="empty"></div>
                 <div class="articleImg"><img src="../assets/paper.png"></div>
                 <div class="articleTitle">SPRAWDŹ NASZE RECEPTURY!</div>
                 <div class="articleContent">
@@ -173,17 +174,23 @@ export default {
 .mainArticle {
     display: grid;
     grid-template-columns: 5% repeat(4, 1fr) 5%;
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: auto 1fr;
     margin-top: 20px;
+}
+
+.empty {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: #FA9C1E;
 }
 
 .articleImg {
     grid-column: 1/3;
     grid-row: 1/3;
     text-align: center;
-    padding: 10px 10% 10px 10%;
+    padding: 15px 0 10px 10%;
     border-top: solid 2px #FA9C1E;
-    background: linear-gradient(#ffffff 0%, #ffffff 58px, #FBB049 58px, #FBB049 100%);
+   
 }
 
 .articleImg > img, .equipImg > img  {
@@ -194,7 +201,7 @@ export default {
 .articleTitle {
     border-top: solid 2px #FA9C1E;
     grid-column: 3/7;
-    padding: 15px 20px 0px 20px;
+    padding: 15px 20px 5px 20px;
     color: #707070;
     font-size: 25px;
 }
@@ -267,15 +274,13 @@ export default {
 
 .galleryLeft {
     grid-column: 1/2;
-    grid-row: 2/3;
     background-color: #FA9C1E;
     height: 100%;
     margin-right: 6px;
 }
 
 .galleryRight {
-    grid-column: 6/7;
-    grid-row: 2/3;
+    grid-column: -2/-1;
     background-color: #FA9C1E;
     height: 100%;
     margin-left: 6px;
@@ -283,7 +288,6 @@ export default {
 
 .galleryContainer {
     cursor: pointer;
-    grid-row: 2/3;
     position: relative;
     overflow: hidden;
     margin: 12px 6px 12px 6px;
@@ -311,5 +315,17 @@ export default {
     width: 100%;
     filter: grayscale(0.75);
     transition: transform 0.4s ease-in-out;
+}
+
+@media (max-width: 560px) {
+    .articleImg, .empty, .equipImg, .galleryContainer:nth-child(5)  {
+        display: none;
+    }
+    .articleTitle, .articleContent, .equipTitle, .equipContent {
+        grid-column: 1/7;
+    }
+    .mainGallery {
+        grid-template-columns: 5% repeat(3, 1fr) 5%;
+    }  
 }
 </style>

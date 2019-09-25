@@ -44,11 +44,14 @@
             </div>
         </nav>
 
-        <router-view/>
+        <transition name="slide" mode="out-in" appear>
+            <router-view :key="$route.fullPath"></router-view>
+        </transition>
 
         <footer class="footer">
             <div class="footerSection">
                 <router-link to="/kontakt" tag="img" :src="require('./assets/avatar.jpg')" class="myAvatar"></router-link>
+                <div class="omnie">O MNIE</div>
                 <a href="mailto:oskarsycz@gmail.com">oskarsycz@gmail.com</a>
             </div>
             <div class="footerSection">
@@ -81,18 +84,24 @@ export default {
     --globalWidth: 70vw;
 }
 
+body {
+  margin: 0;
+}
+
 .all {
     display: grid;
     justify-content: center;
     align-content: start;
     grid-template-columns: var(--globalWidth);
     grid-template-rows: 1fr auto 1fr;
+    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
 a {
     color: white;
+    position:relative;
     text-decoration: none;
     text-transform: none;
 }
@@ -105,12 +114,13 @@ a:active {
     color: #fff152;
 }
 
+
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
     grid-gap: 2px;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     justify-items: center;
     border-bottom: solid #FA9C1E 2px;
 }
@@ -148,6 +158,7 @@ a:active {
 
 .myAvatar {
     cursor: pointer;
+    position: relative;
     width: 90%;
     max-width: 116px;
     margin: 10px;
@@ -158,10 +169,25 @@ a:active {
 .myAvatar:hover {
     box-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 2px -2px 0px #ffffff;
     transform: scale(0.9);
+    
 }
 
 .myAvatar:active {
     box-shadow: 2px 2px 0px #fff152, -2px -2px 0px #fff152, -2px 2px 0px #fff152, 2px -2px 0px #fff152;
+}
+
+.myAvatar:hover + .omnie {
+    opacity: 1;
+}
+
+.omnie {
+    pointer-events: none;
+    position: absolute;
+    font-weight: bold;
+    margin-top: -7px;
+    opacity: 0;
+    text-shadow: 1px 1px 2px black;
+    transition: opacity 0.25s ease-in-out;
 }
 
 .footerSection > iframe {
@@ -427,6 +453,19 @@ a:active {
     animation: paused;
 }
 
+.slide-enter-active, .slide-leave-active {
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-enter {
+    transform: translateX(-100vw);
+}
+
+.slide-leave-to {
+    transform: translateX(100vw);
+}
+
 @keyframes wheelRotation {
 	from {transform: rotate(0deg) scale(0.1,0.45);}
 	to {transform: rotate(359deg) scale(0.1,0.45);}
@@ -451,11 +490,14 @@ a:active {
 }
 
 @media (max-width: 510px) { /*Zmiana menu*/
-    .lewarek, .glass {
+    .lewarek, .glass, .footerSection:nth-child(3) {
         display: none;
     }
     .beerNav {
         grid-template-columns: 1fr;
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 </style>

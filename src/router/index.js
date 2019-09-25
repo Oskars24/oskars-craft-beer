@@ -11,6 +11,9 @@ Vue.use(Router)
 
 export default new Router({
   //base: "/test/", // tylko w przypadku migracji na github pages
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   routes: [
     {
       path: '/',
