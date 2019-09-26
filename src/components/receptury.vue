@@ -1,10 +1,10 @@
 <template>
     <div class="recepturyPage">
         <div class="articleTitle">WYBIERZ RECEPTURĘ</div>
-        <div class="beerLabel" v-for="beer in beerList" :key="beer.id">
+        <router-link :to="'/receptury/' + beer.id" tag="div" class="beerLabel" v-for="beer in beerList" :key="beer.id">
             <div class="beerImg"><img :src="labelSrc(beer.id)"></div>
             <div class="beerTitle">{{ beer.title }}</div>
-        </div>
+        </router-link>
     </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style>
-.beerNav > .router-link-exact-active:nth-child(3) ~ .glass {
+.beerNav > .router-link-active:nth-child(3) ~ .glass {
 transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-1 - 100px)) perspective(60px) rotatex(-15deg);
 }
 </style>
@@ -42,6 +42,7 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-1 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
+    color: #707070
 }
 
 .beerLabel {
@@ -61,6 +62,11 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-1 
 .beerLabel:hover > .beerImg {
     transform: scale(1.05);
     transform-origin: bottom;
+}
+
+.beerLabel:hover > .beerTitle {
+    color: white;
+    text-shadow: 1px 1px 2px #00000080;
 }
 
 .beerLabel:active > .beerTitle {

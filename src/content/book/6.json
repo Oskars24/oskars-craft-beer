@@ -10,9 +10,10 @@
     "miejsce": "",
     "uzyskano": "",
     "opis": "",
+    "sklad": "",
     "surowce": ["", ""],
     "zacieranie": ["", ""],
-    "chemielenie": ["", ""],
+    "chmielenie": ["", ""],
     "fermentacja": ["", ""],
     "notatki": ["", ""],
     "przepis": ["", ""]

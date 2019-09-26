@@ -33,7 +33,7 @@
         <div class="beerDesc">
             <strong>OPIS:</strong>
             {{ beerData.opis }}
-            <router-link to="/receptury" tag="div" class="articleButton">Receptura</router-link>
+            <router-link :to="'/receptury/' + beerData.id" tag="div" class="articleButton">Receptura</router-link>
         </div>
         
     </div>
@@ -76,7 +76,7 @@ export default {
 </script>
 
 <style>
-.beerNav > .router-link-exact-active:nth-child(2) ~ .glass {
+.beerNav > .router-link-active:nth-child(2) ~ .glass {
 transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 - 100px)) perspective(60px) rotatex(-15deg);
 }
 </style>

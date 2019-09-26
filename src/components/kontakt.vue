@@ -14,7 +14,7 @@ name: 'kontakt'
 </script>
 
 <style>
-    .beerNav > .router-link-exact-active:nth-child(7) ~ .glass {
+    .beerNav > .router-link-active:nth-child(7) ~ .glass {
     transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*5 + 100px)) perspective(60px) rotatex(-15deg);
     }
 </style>

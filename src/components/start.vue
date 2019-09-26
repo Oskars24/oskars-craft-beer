@@ -52,8 +52,11 @@ export default {
     },
     methods: {
         orderBeerList: function(tablica) {
+            if (1 === 1) {
             tablica.reverse().slice(0,11)
-            return tablica = [].concat(tablica.slice(6,11),tablica.slice(0,6))
+            tablica = [].concat(tablica.slice(6,11),tablica.slice(0,6))
+            }
+            return tablica
         },
 
         bottleSrc: function(number) {

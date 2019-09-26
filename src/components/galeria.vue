@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-    .beerNav > .router-link-exact-active:nth-child(5) ~ .glass {
+    .beerNav > .router-link-active:nth-child(5) ~ .glass {
     transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*1 + 100px)) perspective(60px) rotatex(-15deg);
     }
 </style>

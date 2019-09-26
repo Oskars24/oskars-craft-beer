@@ -97,6 +97,7 @@ body {
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    color: #1D1D1B;
 }
 
 a {

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import start from '@/components/start'
 import warki from '@/components/warki'
 import receptury from '@/components/receptury'
+import receptura from '@/components/receptura'
 import galeria from '@/components/galeria'
 import browar from '@/components/browar'
 import kontakt from '@/components/kontakt'
@@ -25,11 +26,15 @@ export default new Router({
       name: 'warki',
       component: warki
     },
-  
     {
       path: '/receptury',
       name: 'receptury',
       component: receptury
+    },
+    {
+      path: '/receptury/:id',
+      name: 'receptura',
+      component: receptura
     },
     {
       path: '/galeria',
