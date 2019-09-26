@@ -44,7 +44,7 @@
             </div>
         </nav>
 
-        <transition name="slide" mode="out-in" appear>
+        <transition name="slide" mode="out-in" >
             <router-view :key="$route.fullPath"></router-view>
         </transition>
 
@@ -499,5 +499,49 @@ a:active {
     .footer {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* #################################TYPICAL GLOBAL CSS################################# */
+
+.articleButton {
+    cursor: pointer;
+    margin: auto 0 0 auto;
+    border: solid 2px white;
+    padding: 2px 20px 2px 20px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.articleButton:hover {
+    background-color:  #ffffff80;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+.articleButton:active {
+    color: #fff152;
+    border: solid 2px #fff152
+}
+
+select {
+    border: solid 2px #FA9C1E;
+    overflow: auto;
+}
+
+select:focus {
+    outline: none;
+    border-color: #FA9C1E;
+}
+option {
+    padding: 5px;
+    border: solid transparent 2px
+}
+
+option:hover {
+    background-color: #fff152;
+}
+
+option:checked {
+    background: linear-gradient(#FA9C1E 0%, #FA9C1E 100%);
+    border: solid white 2px
 }
 </style>

@@ -2,8 +2,8 @@
     <div class="warkiPage">
         <div class="empty"></div>
         <div class="beerList">
-            <select size=15 v-on:change="changeBottle($event)">
-                <option v-for="beer in beerList" :key="beer.id" :value="beer.id">{{ beer.title }}</option>
+            <select size=15 v-on:change="changeBottle($event)" v-model="beerSelected">
+                <option v-for="beer in beerList" :key="beer.id" :value="beer.id">{{ beer.id + ". " +beer.title }}</option>
             </select>
         </div>
         <div class="beerBottle"><img :src="bottleSrc(beerSelected)"></div>
@@ -40,12 +40,13 @@
 </template>
 
 <script>
+
 export default {
     name: 'warki',
     data () {
         return {
-            beerList: require("@/content/list.json"),
-            beerSelected: "1"
+            beerList: this.sortBeer(require("@/content/list.json")),
+            beerSelected: this.selectBeer(this.$route.params.id)
         }
     },
     computed: {
@@ -54,42 +55,29 @@ export default {
         } 
     },
     methods: {
-    changeBottle: function changeBottle(event) {
-        this.beerSelected = event.target.value;
+        sortBeer: function(array) {
+            if (array[0].id != 1) {
+                array.sort(function(a,b){return a[1] - b[1]}).reverse()
+            }
+            return array
+        },
+        changeBottle: function changeBottle(event) {
+            this.beerSelected = event.target.value;
+        },
+        bottleSrc: function(number) {
+            return require("@/content/bottles/beer_"+number+".png")
+        },
+        selectBeer: function(check) {
+            if (typeof check == 'number' && check <= this.beerList.len) {return check}
+            else {return 1}
+        }
     },
-    bottleSrc: function(number) {
-        return require("@/content/bottles/beer_"+number+".png")
-    }
-    }
 }
 </script>
 
 <style>
 .beerNav > .router-link-exact-active:nth-child(2) ~ .glass {
 transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 - 100px)) perspective(60px) rotatex(-15deg);
-}
-
-select {
-    border: solid 2px #FA9C1E;
-    overflow: auto;
-}
-
-select:focus {
-    outline: none;
-    border-color: #FA9C1E;
-}
-option {
-    padding: 5px;
-    border: solid transparent 2px
-}
-
-option:hover {
-    background-color: #fff152;
-}
-
-option:checked {
-    background: linear-gradient(#FA9C1E 0%, #FA9C1E 100%);
-    border: solid white 2px
 }
 </style>
 

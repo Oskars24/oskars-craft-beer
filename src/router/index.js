@@ -21,10 +21,11 @@ export default new Router({
       component: start
     },
     {
-      path: '/warki',
+      path: '/warki/:id?',
       name: 'warki',
       component: warki
     },
+  
     {
       path: '/receptury',
       name: 'receptury',

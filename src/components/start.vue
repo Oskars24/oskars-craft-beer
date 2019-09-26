@@ -4,7 +4,7 @@
         <div class="sliderContainer">
             <transition-group class='slider' tag="div">
                 <div class="sliderBottle" v-for="beer in beerList" :key="beer.id">
-                    <router-link to="/" tag="div" class="oneBeerDiv">
+                    <router-link :to="'/warki/' + beer.id" tag="div" class="oneBeerDiv">
                         <img class="sliderBeerImg" :src="bottleSrc(beer.id)">
                         <span class="sliderBeerText">{{ beer.title }}</span>
                     </router-link>
@@ -74,25 +74,6 @@ export default {
 <style>
 .beerNav > .router-link-active:first-child ~ .glass {
     transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-5 - 100px)) perspective(60px) rotateX(-15deg);
-}
-
-.articleButton {
-    cursor: pointer;
-    margin: auto 0 0 auto;
-    border: solid 2px white;
-    padding: 2px 20px 2px 20px;
-    font-weight: bold;
-    width: fit-content;
-}
-
-.articleButton:hover {
-    background-color:  #ffffff80;
-    text-shadow: 1px 1px 2px #00000080;
-}
-
-.articleButton:active {
-    color: #fff152;
-    border: solid 2px #fff152
 }
 </style>
 
