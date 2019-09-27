@@ -484,7 +484,7 @@ a:active {
 	100% {transform: scaleY(0); transform-origin: bottom;}
 }
 
-@media (max-width: 715px) {
+@media (max-width: 830px) {
     :root {
         --globalWidth: 96vw;
     }
@@ -526,6 +526,7 @@ a:active {
 select {
     border: solid 2px #FA9C1E;
     overflow: auto;
+    width: 100%;
 }
 
 select:focus {

@@ -1,20 +1,47 @@
 {
     "id": 5,
-    "title": "Milkshake IPA Mango",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "title": "Milkshake IPA z Mango",
+    "styl": "Milkshake IPA",
+    "ekstrakt": "15,5 BLG",
+    "alkohol": "ok. 5,0%",
+    "ibu": "?",
+    "dataw": "06.10.2018 r.",
+    "datar": "20.10.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "8,2l piwa z 12l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słód Pale ale Viking Malt, płatki owsiane, płatki pszenne, chmiele: Mosaic, Ekuanot, puree z mango, laktoza",
+    "surowce": [
+        "Słód Pale ale Viking Malt - 2,0 kg",
+        "Płatki owsiane - 0,4 kg",
+        "Płatki pszenne - 0,4 kg",
+        "Puree z mango - 0,5 kg",
+        "laktoza - 0,25 kg",
+        "Chmiel Mosaic - 30 g",
+        "Chmiel Ekuanot - 25 g",
+        "Drożdże US-05 - 11,5 g"
+        ],
+    "zacieranie": [
+        "66-68°C - 40 min",
+        "72°C - 10 min",
+        "Wysładzanie wodą o temp. ok. 76°C"
+        ],
+    "chmielenie": [
+        "Mosaic - 5g na 5min",
+        "Ekuanot - 25g przy wyłączeniu palnika",
+        "Mosaic - 25g na cichą fermentację"
+        ],
+    "fermentacja": [
+        "Burzliwa 2-3 dni w temp. ok 20°C",
+        "Burzliwa z mango 10 dni w temp. ok. 20°C",
+        "Cicha 2-4 dni"
+        ],
+    "notatki": [
+        "Drożdże zadano w 19°C",
+        "Pierwsze drożdże nie wystartowały",
+        "Po 48h dodano drugą saszetkę drożdży",
+        "BLG końcowe 7 BLG",
+        "Refermentacja 70g glukozy"
+        ],
+    "przepis": ["W opracowaniu"]
 }

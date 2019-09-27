@@ -1,20 +1,46 @@
 {
     "id": 6,
     "title": "White IPA",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "White IPA",
+    "ekstrakt": "12 BLG",
+    "alkohol": "ok. 5,0%",
+    "ibu": "?",
+    "dataw": "07.10.2018 r.",
+    "datar": "22.10.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "8,8l z 12l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słody: pale ale Viking Malt, pszeniczny Viking Malt, płatki pszenne, płątki owsiane, chmiele: Centennial, Mosaic, Columbus, skórka curacao, kolendra, aframon madagaskarski",
+    "surowce": [
+        "Słód pale ale Viking Malt - 1,25 kg",
+        "Słód pszeniczny Viking Malt 0,75 kg",
+        "Płatki pszenne - 0,5 kg",
+        "Płatki owsiane - 0,2 kg",
+        "Chmiel Mosaic - 25g",
+        "Chmiel Centennial - 15 g",
+        "Chmiel Columbus - 13 g",
+        "Skórka gorzkiej pomarańczy Curacao - 15 g",
+        "Kolendra - 5 g",
+        "Aframon madagaskarski - 3 g",
+        "Drożdże Gozdawa Fruit Blanche G1 - 10 g"
+        ],
+    "zacieranie": [
+        "67°C - 40 min",
+        "72°C - 15 min"
+        ],
+    "chmielenie": [
+        "Columbus - 13g na 60 min",
+        "Centennial - 15g przy wyłączeniu palnika",
+        "Mosaic - 25g na cichą fermentację"
+        ],
+    "fermentacja": [
+        "Burzliwa 10 dni w temp. ok. 21°C",
+        "Cicha ok. 4-5 dni w niższej temp. "
+        ],
+    "notatki": [
+        "Drożdże zadano w 19°C",
+        "BLG końcowe - 2,0 BLG",
+        "Refermentacja 70g glukozy"
+        ],
+    "przepis": ["W opracowaniu"]
 }

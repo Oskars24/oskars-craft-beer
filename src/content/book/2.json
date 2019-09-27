@@ -1,20 +1,42 @@
 {
     "id": 2,
     "title": "Biere Blanche",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Witbier",
+    "ekstrakt": "10 BLG",
+    "alkohol": "ok. 4,5%",
+    "ibu": "?",
+    "dataw": "12.04.2018 r.",
+    "datar": "07.05.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "20l piwa z 24l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słód pilzneński, płątki pszenne, płatki owsiane, kolendra, skórka curacao, chmiel Marynka ",
+    "surowce": [
+        "Słód Pilzneński - 2,0 kg",
+        "Płatki pszenne - 1,4 kg",
+        "Płatki owsiane - 0,4 kg",
+        "Chmiel Marynka - 20g",
+        "Kolendra - 10g",
+        "Skórka curacao - 10g",
+        "Drożdże Gozdawa Classic Belgian Witbier - 10g"
+        ],
+    "zacieranie": [
+        "63°C - 60min",
+        "72°C - 30min",
+        "Wysładzanie wodą o ok. 76°C"
+        ],
+    "chmielenie": [
+        "Marynka 20g na 55 min"
+        ],
+    "fermentacja": [
+        "Burzliwa ok. 14 dni w temp. 20°C",
+        "Cicha ok. 14 dni niższej temp."
+        ],
+    "notatki": [
+        "Pierwsze drożdże nie ruszyły",
+        "Po 30h dodano drugą saszetkę drożsży",
+        "Refermentacja 200g glukozy",
+        "BLG końcowe - 1 BLG"
+        ],
+    "przepis": ["W opracowaniu"]
 }

@@ -1,8 +1,8 @@
 <template>
     <div class="warkiPage">
         <div class="empty"></div>
-        <div class="beerList">
-            <select size=15 v-on:change="changeBottle($event)" v-model="beerSelected">
+        <div class="beerList" v-for="select in [1,15]" :key="select">
+            <select :size=select v-on:change="changeBottle($event)" v-model="beerSelected">
                 <option v-for="beer in beerList" :key="beer.id" :value="beer.id">{{ beer.id + ". " +beer.title }}</option>
             </select>
         </div>
@@ -46,13 +46,13 @@ export default {
     data () {
         return {
             beerList: this.sortBeer(require("@/content/list.json")),
-            beerSelected: this.selectBeer(this.$route.params.id)
+            beerSelected: this.selectBeer(this.$route.params.id, require("@/content/list.json"))
         }
     },
     computed: {
         beerData() {
             return require("@/content/book/"+this.beerSelected+".json")
-        } 
+        }
     },
     methods: {
         sortBeer: function(array) {
@@ -67,8 +67,8 @@ export default {
         bottleSrc: function(number) {
             return require("@/content/bottles/beer_"+number+".png")
         },
-        selectBeer: function(check) {
-            if (typeof check == 'number' && check <= this.beerList.len) {return check}
+        selectBeer: function(check,length) {
+            if (parseInt(check) <= length.length) {return check}
             else {return 1}
         }
     },
@@ -89,7 +89,7 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 }
 
 .empty {
-    grid-column: 1/5;
+    grid-column: 1/-1;
     grid-row: 2/4;
     background-color: #FA9C1E;
 }
@@ -97,28 +97,32 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 .beerList {
     grid-column: 1/2;
     grid-row: 1/4;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+.beerList:nth-child(2) {
+    display: none;
 }
 
 .beerBottle {
     grid-column: 2/3;
     grid-row: 1/4;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .beerTitle {
-    grid-column: 3/5;
+    grid-column: 3/-1;
     grid-row: 1/2;
     color: #707070;
     font-size: 25px;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .beerProp {
-    grid-column: 3/5;
+    grid-column: 3/-1;
     grid-row: 2/3;
     column-count: 2;
     padding: 10px;
@@ -150,5 +154,51 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 
 .articleButton {
     margin: auto 0 0 auto;
+}
+
+@media (max-width: 715px) {
+    .empty {
+        grid-row: 2/5;
+    }
+    .beerList {
+        padding-bottom: 0;
+    }
+
+    .beerComp {
+        grid-column: 3/-1;
+        margin: 0 10px 0 0;
+        border-right: solid 2px;
+        border-bottom: none;
+    }
+
+    .beerDesc {
+        grid-column: 3/-1;
+        grid-row: 4/5;
+        border-left: solid 2px;
+        border-top: none;
+        margin: 0 10px 10px 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .beerTitle {
+        display: none;
+    }
+    .beerList:nth-child(2) {
+        display: block;
+        grid-column: 3/-1;
+        grid-row: 1/2;
+        margin: 0 10px 10px 10px;
+    }
+    .beerList:nth-child(2) > select {
+        color: #707070;
+        font-size: 25px;
+    }
+    .beerList:nth-child(3) {
+        display: none;
+    }
+    .beerBottle {
+        grid-column: 1/3;
+    }
 }
 </style>

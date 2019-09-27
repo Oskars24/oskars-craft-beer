@@ -32,10 +32,10 @@
             </div>
             <div class="mainGallery">
                 <div class="galleryLeft"></div>
-                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_28.jpg" class="galleryImg"></router-link>
-                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_11.jpg" class="galleryImg"></router-link>
-                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_34.jpg" class="galleryImg"></router-link>
-                <router-link to="/browar" tag="div" class="galleryContainer"><img src="../content/gallery/photo_37.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_28.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_11.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_34.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_37.jpg" class="galleryImg"></router-link>
                 <div class="galleryRight"></div>
             </div>
         </div>
@@ -53,8 +53,11 @@ export default {
     methods: {
         orderBeerList: function(tablica) {
             if (1 === 1) {
-            tablica.reverse().slice(0,11)
-            tablica = [].concat(tablica.slice(6,11),tablica.slice(0,6))
+                if (tablica[0].id === 1) {
+                    tablica.reverse()
+                }
+                tablica.slice(0,11)
+                tablica = [].concat(tablica.slice(6,11),tablica.slice(0,6))
             }
             return tablica
         },
@@ -304,7 +307,7 @@ export default {
     transition: transform 0.4s ease-in-out;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 580px) {
     .articleImg, .empty, .equipImg, .galleryContainer:nth-child(5)  {
         display: none;
     }

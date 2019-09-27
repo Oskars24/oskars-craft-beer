@@ -1,20 +1,43 @@
 {
     "id": 7,
     "title": "Bohemskie Ciemne",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Tmave",
+    "ekstrakt": "12 BLG",
+    "alkohol": " ok 5,5%",
+    "ibu": "?",
+    "dataw": "08.10.2018 r.",
+    "datar": "12.11.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "10l piwa z 12l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słody: pilzneński Strzegom, czekoladowy jasny Strzegom, barwiący Strzegom, chmiele: Premiant, Saaz",
+    "surowce": [
+        "Słód pilzneński Strzegom - 1,9 kg",
+        "Słód czekoladowy jasny Strzegom - 0,15 kg",
+        "Słód barwiący Strzegom - 0,15 kg",
+        "Chmiel goryczkowy Premiant - 15 g",
+        "Chmiel aromatyczny Saaz - 13 g",
+        "Drożdże Saflager W34/70 - 11,5 g"
+        ],
+    "zacieranie": [
+        "64°C - 30 min",
+        "72°C - 30 min"
+        ],
+    "chmielenie": [
+        "Premiant - 15g na 60 min",
+        "Saaz - 8g na 10 min",
+        "Saaz - 5g przy wyłączaniu palnika"
+        ],
+    "fermentacja": [
+        "Burzliwa 22 dni w temp. ok. 12°C",
+        "Cicha przez ok. 12 dni w niższej temp."
+        ],
+    "notatki": [
+        "Drożdże zadano w 15°C",
+        "Temperatura oscylowała od 11-13°C",
+        "Fermentor chłodzony butelkami z lodem w torbie Cool Brewing",
+        "BLG końcowe - 1 BLG",
+        "Refermentacja 60g glukozy"
+        ],
+    "przepis": ["W opracowaniu"]
 }

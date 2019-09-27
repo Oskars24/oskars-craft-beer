@@ -1,20 +1,29 @@
 {
     "id": 1,
     "title": "Winter Ale",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Winter Ale",
+    "ekstrakt": "11 BLG",
+    "alkohol": " ok. 5,0%",
+    "ibu": "?",
+    "dataw": "27.02.2018 r.",
+    "datar": "10.03.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "20l piwa",
+    "opis": "W opracowaniu",
+    "sklad": "ekstrakt Finlandia Winter, BA brew-kit PLUS",
+    "surowce": [
+        "Ekstrakt Finlandia Winter - 1l",
+        "BA brew-kit PLUS - 1kg",
+        "Drożdże Kuivahiiva 59 SB - 10g"
+        ],
+    "zacieranie": ["-"],
+    "chmielenie": ["-"],
+    "fermentacja": [
+        "3 dni w temp. 23°C"],
+    "notatki": [
+        "Fermentacja intensywna przez pierwsze 3 dni",
+        "Drożdże zadano w temp. 30°C",
+        "Refermentacja 110g glukozy"
+        ],
+    "przepis": ["W opracowaniu"]
 }

@@ -65,7 +65,7 @@ name: 'kontakt'
     color: white;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 580px) {
     .map {
         display:none;
     }

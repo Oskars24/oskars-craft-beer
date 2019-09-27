@@ -7,12 +7,6 @@
                 <li v-for="res in beerData.surowce" :key="res">{{ res }}</li>
             </ul>
         </div>
-        <div class="beerCourse">
-            <strong>PRZEBIEG WARZENIA:</strong>
-            <ol>
-                <li v-for="course in beerData.przepis" :key="course">{{ course }}</li>
-            </ol>
-        </div>
         <div class="beerProc">
             <strong>ZACIERANIE:</strong>
             <ul>
@@ -30,6 +24,12 @@
             <ul>
                 <li v-for="value in beerData.notatki" :key="value">{{ value }}</li>
             </ul><br>
+        </div>
+        <div class="beerCourse">
+            <strong>PRZEBIEG WARZENIA:</strong>
+            <ol>
+                <li v-for="course in beerData.przepis" :key="course">{{ course }}</li>
+            </ol>
         </div>
         <div class="buttonLine">
             <div class="articleButton">Pobierz PDF</div>
@@ -118,5 +118,18 @@ ul > li:before {
 .articleButton {
     margin: auto;
     color: white;
+}
+
+@media (max-width: 580px) {
+    .recepturaPage {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .beerTitle, .beerRes, .beerCourse, .beerProc, .buttonLine {
+        grid-area: auto;
+    }
+    .beerProc {
+        column-count: 2;
+    }
 }
 </style>

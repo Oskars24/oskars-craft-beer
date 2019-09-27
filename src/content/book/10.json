@@ -1,20 +1,72 @@
 {
     "id": 10,
     "title": "Saison",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Saison",
+    "ekstrakt": "16,0 BLG",
+    "alkohol": "ok. 7,0 %",
+    "ibu": "?",
+    "dataw": "08.03.2019 r.",
+    "datar": "06.04.2019 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "20,5l piwa z 23l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słody: pilzneński Viking Malt, monachijski typ I Viking Malt, pszeniczny jasny Wayermann, pale ale Wayermann, pszeniczny ciemny Wayermann, karmelowy Carabelge Wayermann, zakwaszający, chmiele: Marynka, Sybilla, curacao, kolendra",
+    "surowce": [
+        "Słód pilzneński Viking Malt - 3,0 kg (49%)",
+        "Słód monachijski typ I Viking Malt - 1,0 kg (16%)",
+        "Słód pszeniczny jasny Weyermann® - 1,0 kg (16%)",
+        "Słód pale ale Weyermann® - 0,65 kg (10%)",
+        "Słód pszeniczny ciemny Weyermann® - 0,25 kg (4%)",
+        "Słód karmelowy Carabelge Weyermann®  - 0,20 kg (3%)",
+        "Słód zakwaszający Weyermann® - 0,10 kg (2%)",
+        "Chmiel Marynka (α kwasy 9,5 %) - 50 g",
+        "Chmiel Sybilla (α kwasy 6,5 %) - 50 g",
+        "Curacao - 20 g",
+        "Kolendra - 10 g",
+        "Drożdże Safale T-58 - 11,5 g"
+        ],
+    "zacieranie": [
+        "64°C - 50 min",
+        "72°C - 20 min",
+        "78°C - wygrzew",
+        "Wysładzane wodą ok. 78°C"
+        ],
+    "chmielenie": [
+        "Marynka - 20g na 60 min",
+        "Marynka - 30g na 35 min",
+        "Sybilla - 20g na 20 min",
+        "Sybilla - 30g 3 dni przed rozlewem"
+        ],
+    "fermentacja": [
+        "Burzliwa 4 dni w temp. 19°C",
+        "Burzliwa 10 dni w temp. 22°C",
+        "cicha 10 dni w temp. 20°C"
+        ],
+    "notatki": [
+        "Drożdże zadane w 17°C",
+        "Chłodzenie 35 min",
+        "Czas całej operacji 7h",
+        "25.03.2019 r. pomiar - 5,0 BLG, przelane na cichą z rajstopą na rurce",
+        "02.04.2019 r. pomiar - 3,0 BLG, dodano 2 kule z chmielem w rajstopie 40 DEN",
+        "05.04.2019 r. BLG końcowe 2,5 BLG",
+        "Refermentacja 175g glukozy rozpuszczone w 0,4l wody"
+        ],
+    "przepis": [
+        "Do garnka o pojemności 30 l wlać 19 l wody i wsypać ześrutowane słody.",
+        "Ustalamy temperaturę na 67°C i utrzymujemy przez 50 min.",
+        "W drugim garnku zaczynamy grzać wodę do wysładzania do 76°C.",
+        "Podnosimy temperaturę do 74°C i utrzymujemy przez 20 min.",
+        "Przeprowadzamy próbę jodową i decydujemy czy zacierać dalej.",
+        "Podgrzewamy zacier do 78°C i przenosimy do filtracji (izolacja kadzi kocem).",
+        "Czekamy ok. 30 min, aż złoże się ułoży.",
+        "Wysładzamy powoli wodą 76°C do uzyskania 25l brzeczki.",
+        "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 18°C.",
+        "Gotujemy brzeczkę przez 70 min: a) W 10 min dodajemy 20 g chmielu Marynka. b) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. c) W 35 min dodajemy 30 g chmielu Marynka. d) W 60 min dodajemy 20 g chmielu Sybilla i wkładamy chłodnicę do brzeczki. e) W 65 min dodajemy 20 g curacao i 10 g kolendry.",
+        "Robimy starter drożdżowy, czyli dodajemy drożdży do przygotowanej wody.",
+        "Zaczynamy chłodzenie przy minimalnym ciśnieniu wody.",
+        "Chłodzimy brzeczkę do 17°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże: a) Przed dodaniem drożdży pobieramy próbkę 100 ml,  ogrzewamy do 20°C i mierzymy BLG.",
+        "Fermentujemy przez ok. 4 dni w temperaturze 19°C, a następnie zwiększamy temperaturę do 22°C kiedy fermentacja 'zacznie cichnąć'.",
+        "Po 14 dniach mierzymy BLG. Jeśli BLG odpowiednio niskie przelewamy na cichą i zostawiamy na kolejne 10 dni: a) Po 7 dniach dodajemy pozostałe 30 g chmielu Sybilla. b) Po 3 dniach mierzymy BLG i decydujemy czy fermentować dalej",
+        "Jeśli BLG nie spada to butelkujemy."
+        ]
 }

@@ -1,20 +1,38 @@
 {
     "id": 4,
     "title": "American Wheat",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "American Wheat",
+    "ekstrakt": "10 BLG",
+    "alkohol": " ok. 4,0%",
+    "ibu": "?",
+    "dataw": "05.10.2018 r.",
+    "datar": "17.10.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "10l piwa z 12l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słody: pszeniczny Strzegom, pilzneński Strzegom, chmiel Citra",
+    "surowce": [
+        "Słód pszeniczny Strzegom - 1,25 kg",
+        "Słód pilzneński Strzegom - 1,25 kg",
+        "Chmiel Citra - 30 g",
+        "Drożdże Gozdawa U.S. West Coast - 10g"
+        ],
+    "zacieranie": [
+        "68°C - 60 min",
+        "Wysładzane wodą o temp. ok. 76-78°C"
+        ],
+    "chmielenie": [
+        "Citra - 7g na 55 min",
+        "Citra - 8g ba 15 min",
+        "Citra - 15g przy wyłączeniu palnika"
+        ],
+    "fermentacja": [
+        "Burzliwa 12-14 dni w temp. 17-19°C"
+        ],
+    "notatki": [
+        "Zacieranie wydłużono o 15 min",
+        "Refermentacja 70g glukozy",
+        "BLG końcowe - 2,5 BLG"
+        ],
+    "przepis": ["W opracowaniu"]
 }

@@ -1,20 +1,46 @@
 {
     "id": 12,
     "title": "Witbier Fresh Orange II",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Witbier",
+    "ekstrakt": "10,0 BLG",
+    "alkohol": "ok. 4,5%",
+    "ibu": "1/10",
+    "dataw": "29.08.2019 r.",
+    "datar": "19.09.2019 r.",
+    "miejsce": "Przemyśl",
+    "uzyskano": "19l piwa z 23l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słód pilzneński premium (extra jasny) Wayermann, płatki pszeniczne, płątki owsiane, chmiel Citra, świeża skórka pomarańczy i grejfruta, kolendra indyjska",
+    "surowce": [
+        "Słód pilzneński premium (extra jasny) Wayermann - 2,0 kg",
+        "Płatki pszeniczne - 1,4 kg",
+        "Płatki owsiane - 0,4 kg",
+        "Chmiel Citra - 50 g",
+        "Lubelski - 20 g",
+        "Świeża skórka z 1 grejfruta czerwonego (bez albedo) - ok. 60 g",
+        "Świeża skórka z 6 pomarańczy deserowych (bez albedo) - ok. 300 g",
+        "Łuska ryżowa sterylizowana - 100 g",
+        "Kolendra indyjska - 20 g",
+        "Drożdże Brewferm Blanche - 12 g"
+        ],
+    "zacieranie": [
+        "63°C - 60min",
+        "72°C - 30min",
+        "Wysładzanie wodą o ok. 78°C"
+        ],
+    "chmielenie": [
+        "Citra - 25g na 15 min"
+        ],
+    "fermentacja": [
+        "Burzliwa 12 dni w 18-19°C",
+        "Cicha 9 dni w temp. 18-19°C"
+        ],
+    "notatki": [
+        "Filtracja z użyciem łuski ryżowej - 30min",
+        "Czas całej operacji 7,5h ze sprzątaniem",
+        "10.09.2019 r. rozlano na dwa fermentory, do jednego dodano 10g chmielu lubelskiego, pomiar - 2,0 BLG",
+        "BLG końcowe - 1, BLG",
+        "Refermentacja z 135g glukozy rozpuszczonej w 0,4l wody"
+        ],
+    "przepis": ["W opracowaniu"]
 }

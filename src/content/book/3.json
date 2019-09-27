@@ -1,20 +1,43 @@
 {
     "id": 3,
     "title": "Coffe Sweet Staut",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Coffe Staut",
+    "ekstrakt": "13 BLG",
+    "alkohol": "ok. 4,5%",
+    "ibu": "?",
+    "dataw": "13.04.2018 r.",
+    "datar": "08.05.2018 r.",
+    "miejsce": "Kraków",
+    "uzyskano": "20l piwa z 24,5l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słody: pilzneński, karmelowy Caraaroma, czekoladowy, chmiel Perle, kawa Costa Rica San Antonio, laktoza",
+    "surowce": [
+        "Słód pilzneński - 3,8 kg",
+        "Słód czekoladowy - 0,4 kg",
+        "Słów karmelowy Caraaroma - 0,25 kg",
+        "Kawa Costa Rica San Antonio - 150 g",
+        "Chmiel Perle - 40 g",
+        "Laktoza - 0,5 kg",
+        "Drożdże US-05 - 11,5g"
+        ],
+    "zacieranie": [
+        "64°C - 30 min",
+        "72°C - 30 min",
+        "Wysładzanie wodą o ok. 76-78°C"
+        ],
+    "chmielenie": [
+        "Perle - 40g na 55min"
+        ],
+    "fermentacja": [
+        "ok. 7-9 dni w temp. 20°C",
+        "do 14 dni w niższej temp."
+        ],
+    "notatki": [
+        "Drożdże zadane w 24°C, wystartowały po 1h",
+        "Nieszczelny kranik przy rozlewie",
+        "Cicha fermentacja z dodatkiem kawy w ziarnach w dniu 25.04.2018 r.",
+        "BLG końcowe - 4,5 BLG",
+        "Refermentacja z 135g glukozy"
+        ],
+    "przepis": ["W opracowaniu"]
 }

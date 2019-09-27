@@ -1,20 +1,42 @@
 {
     "id": 11,
     "title": "Witbier Fresh Orange",
-    "styl": "",
-    "ekstrakt": "",
-    "alkohol": "",
-    "ibu": "",
-    "dataw": "",
-    "datar": "",
-    "miejsce": "",
-    "uzyskano": "",
-    "opis": "",
-    "sklad": "",
-    "surowce": ["", ""],
-    "zacieranie": ["", ""],
-    "chmielenie": ["", ""],
-    "fermentacja": ["", ""],
-    "notatki": ["", ""],
-    "przepis": ["", ""]
+    "styl": "Witbier",
+    "ekstrakt": "10,0 BLG",
+    "alkohol": "ok. 4,5%",
+    "ibu": "1/10",
+    "dataw": "05.07.2019 r.",
+    "datar": "22.07.2019 r.",
+    "miejsce": "Przemyśl",
+    "uzyskano": "19l piwa z 22,5l brzeczki",
+    "opis": "W opracowaniu",
+    "sklad": "słód pilzneński premium (extra jasny) Wayermann, płatki pszeniczne, płątki owsiane, chmiel Citra, świeża skórka pomarańczy i grejfruta, kolendra indyjska",
+    "surowce": [
+        "Słód pilzneński premium (extra jasny) Wayermann - 2,0 kg",
+        "Płatki pszeniczne - 1,4 kg",
+        "Płatki owsiane - 0,4 kg",
+        "Chmiel Citra - 50 g",
+        "Świeża skórka z 1 grejfruta czerwonego (bez albedo) - ok. 60 g",
+        "Świeża skórka z 6 pomarańczy deserowych (bez albedo) - ok. 300 g",
+        "Kolendra indyjska - 15 g",
+        "Drożdże Brewferm Blanche - 12 g"
+        ],
+    "zacieranie": [
+        "63°C - 60min",
+        "72°C - 30min",
+        "Wysładzanie wodą o ok. 78°C"
+        ],
+    "chmielenie": [
+        "Citra - 25g na 15 min"
+        ],
+    "fermentacja": [
+        "Burzliwa 12 dni w 18-20°C",
+        "Cicha 5 dni w niższej temp."
+        ],
+    "notatki": [
+        "Problemy przy filtracji (2,5h)",
+        "BLG końcowe - 1, BLG",
+        "Refermentacja z 135g glukozy rozpuszczonej w 0,4l wody"
+        ],
+    "przepis": ["W opracowaniu"]
 }
