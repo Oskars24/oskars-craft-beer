@@ -1,5 +1,19 @@
 <template>
     <div class="all">
+        <div class="burgerMenu">
+            <input class="burgerFalseButton" type="checkbox" :checked="checked" v-model="checked"/>
+            <div class="burgerButton">
+                <div></div>
+            </div>
+            <nav class="burgerOpen">
+                <router-link to="/" tag="span" @click.native="uncheck" exact>START</router-link>
+                <router-link to="/warki" tag="span" @click.native="uncheck">WARKI</router-link>
+                <router-link to="/receptury" tag="span" @click.native="uncheck">RECEPTURY</router-link>
+                <router-link to="/galeria" tag="span" @click.native="uncheck">GALERIA</router-link>
+                <router-link to="/browar" tag="span" @click.native="uncheck">BROWAR</router-link>
+                <router-link to="/kontakt" tag="span" @click.native="uncheck">KONTAKT</router-link>
+            </nav>
+        </div>
         <nav class="beerNav">
             <router-link to="/" tag="div" class="lewarek" exact>
                 <div class="rod"></div>
@@ -72,7 +86,17 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+        return {
+            checked: false,
+        }
+    },
+    methods: {
+        uncheck: function() {
+                this.checked=false;
+            },
+        }
 }
 </script>
 
@@ -467,6 +491,74 @@ a:active {
     transform: translateX(100vw);
 }
 
+.burgerMenu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.burgerFalseButton {
+    opacity: 0;
+}
+
+.burgerFalseButton, .burgerButton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    z-index: 2;
+}
+
+.burgerFalseButton:checked ~ .burgerOpen {
+    transform: none;
+}
+
+.burgerButton {
+    pointer-events: none;
+}
+
+.burgerButton:after, 
+.burgerButton:before, 
+.burgerButton div {
+    background-color: #474745;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+.burgerFalseButton:checked ~ .burgerButton:before {
+    background-color: white;
+    transform: translateY(12px) rotate(135deg);
+}
+
+.burgerFalseButton:checked ~ .burgerButton:after {
+    background-color: white;
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.burgerFalseButton:checked ~ .burgerButton div {
+    transform: scale(0);
+}
+
+.burgerOpen {
+    position: absolute;
+    display: grid;
+    width: fit-content;
+    background-color: #474745;
+    border-radius: 0 50% 50% 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2.5;
+    padding: 50px 30px 10px 10px;
+    transform: translateX(-100%);
+    transition: transform 0.25s linear;
+}
+
 @keyframes wheelRotation {
 	from {transform: rotate(0deg) scale(0.1,0.45);}
 	to {transform: rotate(359deg) scale(0.1,0.45);}
@@ -499,6 +591,9 @@ a:active {
     }
     .footer {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .burgerMenu {
+        display: grid;
     }
 }
 
@@ -533,6 +628,7 @@ select:focus {
     outline: none;
     border-color: #FA9C1E;
 }
+
 option {
     padding: 5px;
     border: solid transparent 2px
