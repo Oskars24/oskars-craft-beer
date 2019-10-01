@@ -5,12 +5,12 @@
         <div class="articleImg"><img src="../assets/tank.png"></div>
         <div class="articleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit elit, gravida sed ullamcorper sollicitudin, mollis ac ante. Suspendisse nec justo vitae ipsum sodales vehicula eget nec augue. Proin tempus, sem et tincidunt suscipit, augue nunc dictum ipsum, sit amet tempus orci ante non ligula. Integer vitae euismod odio, vel elementum ligula. Nam non condimentum urna, ac aliquam mauris.</div>
         <template class="equipContent" v-for="equi in equiList">
-            <div class="equipImg" :key="equi.id">
-                <img :src="equiSrc(equi.id)">
-            </div>
-            <div class="equipDesc" :key="equi.id">
+            <div class="equipDesc" :key="equi.id + 'B'">
                 <strong>{{ equi.title + ":" }}</strong><br>
                 {{ equi.description }}
+            </div>
+            <div class="equipImg" :key="equi.id">
+                <img :src="equiSrc(equi.id)">
             </div>
         </template>
     </div>
@@ -83,14 +83,15 @@ export default {
     width: 100%;
 }
 
-.equipImg:nth-of-type(4n-3) {
+.equipImg:nth-of-type(4n-2) {
     grid-column: 1/2;
     background-color: #FA9C1C;
     padding: 10px;
     margin: 8px 5px 8px 0;
+    position: relative;
 }
 
-.equipDesc:nth-of-type(4n-2) {
+.equipDesc:nth-of-type(4n-3) {
     grid-column: 2/-1;
     background-color: #80807E;
     color: white;
@@ -98,14 +99,15 @@ export default {
     margin: 8px 0 8px 5px;
 }
 
-.equipImg:nth-of-type(4n-1) {
+.equipImg:nth-of-type(4n-4) {
     grid-column: 3/-1;
     background-color: #FA9C1C;
     padding: 10px;
     margin: 8px 0 8px 5px;
+    position: relative;
 }
 
-.equipDesc:nth-of-type(4n-4) {
+.equipDesc:nth-of-type(4n-1) {
     grid-column: 1/3;
     background-color: #80807E;
     color: white;
@@ -115,7 +117,48 @@ export default {
 
 @media (max-width: 580px) {
     .browarPage {
-        grid-template-columns: calc(33% - 5px) auto calc(33% - 5px);
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        grid-template-rows: max-content;
+    }
+
+    .equipImg:nth-of-type(4n-2) {
+        grid-column: 1/2;
+        position: relative;
+    }
+    .equipImg:nth-of-type(4n-2):before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        margin: -20% 25% 0 25%;
+        background-color: #fa9c1c;
+        transform: translate(-10px, -10px) scaleY(0.3) rotate(45deg);
+        z-index: -1;
+    }
+
+    .equipDesc:nth-of-type(4n-3) {
+        grid-column: 1/-1;
+    }
+
+    .equipImg:nth-of-type(4n-4) {
+        grid-column: 2/-1;
+    }
+
+    .equipImg:nth-of-type(4n-4):before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        margin: 70% 25% 0 25%;
+        background-color: #fa9c1c;
+        transform: translate(-10px, -10px) scaleY(0.3) rotate(45deg);
+        z-index: -1;
+    }
+
+    .equipDesc:nth-of-type(4n-1) {
+        grid-column: 1/-1;
     }
 }
 </style>
+
+    

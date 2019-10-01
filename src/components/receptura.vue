@@ -1,6 +1,7 @@
 <template>
     <div class="recepturaPage">
         <div class="beerTitle">{{ beerData.title }}</div>
+        <div class="beerImg"><img :src="labelSrc"></div>
         <div class="beerRes">
             <strong>SUROWCE:</strong>
             <ul>
@@ -48,8 +49,11 @@ export default {
     computed: {
         beerData() {
             return require("@/content/book/"+this.beerSelected+".json")
-        } 
-    },
+        },
+        labelSrc: function() {
+            return require("@/content/labels/label_"+this.beerSelected+".jpg")
+        },
+    }
 }
 </script>
 
@@ -90,8 +94,14 @@ ul > li:before {
     margin: 10px;
 }
 
+.beerImg {
+    grid-area: 2/1/3/2;
+    padding: 10px;
+    text-align: center;
+}
+
 .beerRes {
-    grid-area: 2/1/3/3;
+    grid-area: 2/2/3/3;
     padding: 10px;
 }
 

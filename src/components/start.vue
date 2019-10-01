@@ -32,10 +32,10 @@
             </div>
             <div class="mainGallery">
                 <div class="galleryLeft"></div>
-                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_28.jpg" class="galleryImg"></router-link>
-                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_11.jpg" class="galleryImg"></router-link>
-                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_34.jpg" class="galleryImg"></router-link>
-                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/photo_37.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/thumbs/photo_28.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/thumbs/photo_11.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/thumbs/photo_34.jpg" class="galleryImg"></router-link>
+                <router-link to="/galeria" tag="div" class="galleryContainer"><img src="../content/gallery/thumbs/photo_37.jpg" class="galleryImg"></router-link>
                 <div class="galleryRight"></div>
             </div>
         </div>
@@ -100,39 +100,6 @@ export default {
     justify-content: center;
     overflow: hidden;
     border-bottom: solid #FA9C1E 2px;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    box-shadow: -7px 7px 0 0 #898988;
-    border-radius: 4px;
-    padding: 20px;
-    margin: 0 30px 0 30px;
-    transition: box-shadow 0.2s linear;
-}
-
-.prev:before, .next:before {
-    content: '';
-    position: absolute;
-    transform: translate(calc(-50% - 7px), calc(-50% + 7px));
-    width: 100%;
-    height: 100%;
-}
-
-.prev:hover, .next:hover {
-    box-shadow: -7px 7px 0 0 #474745, -8px 10px 2px #fff152;
-}
-
-.prev:active, .next:active {
-    box-shadow:  -7px 7px 0 0 #fff152 , -8px 10px 2px #fff152;
-}
-
-.next{
-    right: 0;
-    transform: translateY(-50%) rotate(-135deg);
 }
 
 .sliderBottle {

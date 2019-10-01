@@ -1,33 +1,26 @@
 <template>
     <div class="all">
-        <div class="burgerMenu">
-            <input class="burgerFalseButton" type="checkbox" :checked="checked" v-model="checked"/>
-            <div class="burgerButton">
-                <div></div>
-            </div>
-            <nav class="burgerOpen">
-                <router-link to="/" tag="span" @click.native="uncheck" exact>START</router-link>
-                <router-link to="/warki" tag="span" @click.native="uncheck">WARKI</router-link>
-                <router-link to="/receptury" tag="span" @click.native="uncheck">RECEPTURY</router-link>
-                <router-link to="/galeria" tag="span" @click.native="uncheck">GALERIA</router-link>
-                <router-link to="/browar" tag="span" @click.native="uncheck">BROWAR</router-link>
-                <router-link to="/kontakt" tag="span" @click.native="uncheck">KONTAKT</router-link>
-            </nav>
+        <router-link to="/" tag="div" class="headerLogo" exact>
+            <span>Oskar's</span><br><span>Craft Beer</span>
+        </router-link>
+        <input class="burgerFalseButton" type="checkbox" :checked="checked" v-model="checked"/>
+        <div class="burgerButton">
+            <div></div>
         </div>
         <nav class="beerNav">
-            <router-link to="/" tag="div" class="lewarek" exact>
+            <router-link to="/" tag="div" class="lewarek" @click.native="uncheck" exact>
                 <div class="rod"></div>
                 <div class="wheel"></div>
                 <div class="tap"></div>
                 <div class="textMenu">START</div>
             </router-link>
-            <router-link to="/warki" tag="div" class="lewarek">
+            <router-link to="/warki" tag="div" class="lewarek" @click.native="uncheck">
                 <div class="rod"></div>
                 <div class="wheel"></div>
                 <div class="tap"></div>
                 <div class="textMenu">WARKI</div>
             </router-link>
-            <router-link to="/receptury" tag="div" class="lewarek">
+            <router-link to="/receptury" tag="div" class="lewarek" @click.native="uncheck">
                 <div class="rod"></div>
                 <div class="wheel"></div>
                 <div class="tap"></div>
@@ -36,19 +29,19 @@
             <router-link to="/" tag="div" class="headerLogo" exact>
                 <span>Oskar's</span><br><span>Craft Beer</span>
             </router-link>
-            <router-link to="/galeria" tag="div" class="lewarek">
+            <router-link to="/galeria" tag="div" class="lewarek" @click.native="uncheck">
                     <div class="rod"></div>
                     <div class="wheel"></div>
                     <div class="tap"></div>
                     <div class="textMenu">GALERIA</div>
             </router-link>
-            <router-link to="/browar" tag="div" class="lewarek">
+            <router-link to="/browar" tag="div" class="lewarek" @click.native="uncheck">
                     <div class="rod"></div>
                     <div class="wheel"></div>
                     <div class="tap"></div>
                     <div class="textMenu">BROWAR</div>
             </router-link>
-            <router-link to="/kontakt" tag="div" class="lewarek">
+            <router-link to="/kontakt" tag="div" class="lewarek" @click.native="uncheck">
                     <div class="rod"></div>
                     <div class="wheel"></div>
                     <div class="tap"></div>
@@ -122,6 +115,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #1D1D1B;
+    position: relative;
 }
 
 a {
@@ -234,12 +228,17 @@ a:active {
 }
 
 .headerLogo {
+    display: none;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 25px;
+    margin: 50px 0 20px 25px;
     cursor: pointer;
     font-family: "SteakSmoked";
     transform: rotate(-15deg);
+}
+
+.beerNav > .headerLogo {
+    display: block;
+    margin: 50px 0 0 25px;
 }
 
 .headerLogo span:nth-child(1) {
@@ -491,26 +490,20 @@ a:active {
     transform: translateX(100vw);
 }
 
-.burgerMenu {
-    display: none;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
 .burgerFalseButton {
     opacity: 0;
 }
 
 .burgerFalseButton, .burgerButton {
-    position: absolute;
+    display: none;
+    position: fixed;
     width: 40px;
     height: 40px;
     margin: 10px;
     z-index: 2;
 }
 
-.burgerFalseButton:checked ~ .burgerOpen {
+.burgerFalseButton:checked ~ .beerNav {
     transform: none;
 }
 
@@ -522,41 +515,27 @@ a:active {
 .burgerButton:before, 
 .burgerButton div {
     background-color: #474745;
+    box-shadow: 0 0 8px white;
     border-radius: 3px;
     content: '';
     display: block;
     height: 5px;
     margin: 7px 0;
-    transition: all .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .burgerFalseButton:checked ~ .burgerButton:before {
-    background-color: white;
+    box-shadow: none;
     transform: translateY(12px) rotate(135deg);
 }
 
 .burgerFalseButton:checked ~ .burgerButton:after {
-    background-color: white;
+    box-shadow: none;
     transform: translateY(-12px) rotate(-135deg);
 }
 
 .burgerFalseButton:checked ~ .burgerButton div {
     transform: scale(0);
-}
-
-.burgerOpen {
-    position: absolute;
-    display: grid;
-    width: fit-content;
-    background-color: #474745;
-    border-radius: 0 50% 50% 0;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 2.5;
-    padding: 50px 30px 10px 10px;
-    transform: translateX(-100%);
-    transition: transform 0.25s linear;
 }
 
 @keyframes wheelRotation {
@@ -583,18 +562,46 @@ a:active {
 }
 
 @media (max-width: 510px) { /*Zmiana menu*/
-    .lewarek, .glass, .footerSection:nth-child(3) {
+    .headerLogo {
+        display: block;
+    }
+
+    .glass, .footerSection:nth-child(3), .beerNav > .headerLogo {
         display: none;
     }
     .beerNav {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-rows: auto;
+        width: fit-content;
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        overflow-y: scroll;
+        background-color: #ffffff;
+        opacity: 0.9;
+        transform: translateX(-100%);
+        margin: 0;
+        padding: 60px 10px 60px 10px;
+        transition: transform 0.25s linear;
+        z-index: 1;
     }
+
+    .lewarek {
+        margin: 10px;
+    }
+
+    .lewarek:hover > .tap:after {
+        animation: none;
+    }
+
     .footer {
         grid-template-columns: repeat(2, 1fr);
     }
-    .burgerMenu {
-        display: grid;
+
+    .burgerFalseButton, .burgerButton {
+        display: block;
     }
+
 }
 
 /* #################################TYPICAL GLOBAL CSS################################# */
@@ -641,5 +648,38 @@ option:hover {
 option:checked {
     background: linear-gradient(#FA9C1E 0%, #FA9C1E 100%);
     border: solid white 2px
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: -7px 7px 0 0 #898988;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 30px 0 30px;
+    transition: box-shadow 0.2s linear;
+}
+
+.prev:before, .next:before {
+    content: '';
+    position: absolute;
+    transform: translate(calc(-50% - 7px), calc(-50% + 7px));
+    width: 100%;
+    height: 100%;
+}
+
+.prev:hover, .next:hover {
+    box-shadow: -7px 7px 0 0 #474745, -8px 10px 2px #fff152;
+}
+
+.prev:active, .next:active {
+    box-shadow:  -7px 7px 0 0 #fff152 , -8px 10px 2px #fff152;
+}
+
+.next{
+    right: 0;
+    transform: translateY(-50%) rotate(-135deg);
 }
 </style>
