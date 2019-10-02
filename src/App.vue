@@ -17,7 +17,7 @@
             <router-link to="/warki" tag="div" class="lewarek" @click.native="uncheck">
                 <div class="rod"></div>
                 <div class="wheel"></div>
-                <div class="tap"></div>
+                <div class="tap" id="pat"></div>
                 <div class="textMenu">WARKI</div>
             </router-link>
             <router-link to="/receptury" tag="div" class="lewarek" @click.native="uncheck">
@@ -78,6 +78,16 @@
 </template>
 
 <script>
+// Vanilla JS END ANIMATION MENU CLICK
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.tap').forEach(item => {
+        item.addEventListener('animationend', event => {
+            item.click()
+        })
+    })
+})
+
+
 export default {
   name: 'App',
   data () {
@@ -89,11 +99,15 @@ export default {
         uncheck: function() {
                 this.checked=false;
             },
-        }
+        },
+    watch: {
+        
+    }
 }
 </script>
 
 <style>
+/* #################################HEADER AND FOOTER CSS################################# */
 @font-face {font-family: "SteakSmoked"; src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot"); src: url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.woff") format("woff"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/147ed118f1ab8fd89c5252b82998baff.svg#SteakSmoked") format("svg"); }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
@@ -353,8 +367,6 @@ a:active {
     transform: rotate(-15deg);
     transition: transform 0.15s linear;
 }
-
-
 
 .glass {
     box-sizing: border-box;
