@@ -91,7 +91,7 @@ ul > li:before {
     font-size: 25px;
     color: #707070;
     border-bottom: solid 2px #FBB049;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 .beerImg {

@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         equiSrc: function(number) {
-            return require("@/content/equipment/equi_"+number+".png")
+            return require("@/content/equipment/thumbs/equi_"+number+".png")
         }
     }
 }

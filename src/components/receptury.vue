@@ -20,7 +20,6 @@ export default {
         sortBeer: function(array) {
             if (array[0].id != 1) {
                 array.sort(function(a,b){return a[1] - b[1]})
-                console.log(array)
             }
             if (array[0].id === 1) {
                     array.reverse()

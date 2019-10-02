@@ -1,8 +1,14 @@
 <template>
     <div class="warkiPage">
         <div class="empty"></div>
-        <div class="beerList" v-for="select in [1,15]" :key="select">
-            <select :size=select v-on:change="changeBottle($event)" v-model="beerSelected">
+        <div class="beerListRadio">
+            <template v-for="beer in beerList">
+                <input type="radio" name="beer" :value="beer.id" :id="'radio' + beer.id" class="radioInput" :key="beer.id + 'A'" v-model="beerSelected">
+                <label :for="'radio' + beer.id" class="radioLabel" :key="beer.id + 'B'">{{beer.id + ". " +beer.title}}</label>
+            </template>
+        </div>
+        <div class="beerList">
+            <select v-on:change="changeBottle($event)" v-model="beerSelected">
                 <option v-for="beer in beerList" :key="beer.id" :value="beer.id">{{ beer.id + ". " +beer.title }}</option>
             </select>
         </div>
@@ -85,7 +91,7 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 .warkiPage {
     display: grid;
     grid-template-columns: max-content max-content auto auto;
-    grid-template-rows: max-content max-content auto;
+    grid-template-rows: auto min-content minmax(220px, min-content);
 }
 
 .empty {
@@ -94,13 +100,36 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
     background-color: #FA9C1E;
 }
 
-.beerList {
+.beerListRadio {
+    display: grid;
     grid-column: 1/2;
     grid-row: 1/4;
-    padding: 0 10px 10px 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    border: solid 2px #FA9C1E;
+    margin: 0 10px 10px 10px;
 }
 
-.beerList:nth-child(2) {
+.radioLabel {
+  background-color: white;
+  border: 2px solid #ffffff;
+  padding: 5px;
+}
+
+.radioLabel:hover {
+  background-color: #fff152;
+}
+
+.radioInput {
+      display: none
+}
+
+.radioInput:checked + .radioLabel {
+     background-color: #FA9C1E;
+     color:white;
+}
+
+.beerList {
     display: none;
 }
 
@@ -109,7 +138,7 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
     grid-row: 1/4;
     margin: 0 10px 10px 10px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -160,9 +189,6 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
     .empty {
         grid-row: 2/5;
     }
-    .beerList {
-        padding-bottom: 0;
-    }
 
     .beerComp {
         grid-column: 3/-1;
@@ -181,21 +207,18 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 }
 
 @media (max-width: 580px) {
-    .beerTitle {
+    .beerTitle, .beerListRadio {
         display: none;
     }
-    .beerList:nth-child(2) {
+    .beerList {
         display: block;
         grid-column: 3/-1;
         grid-row: 1/2;
         margin: 0 10px 10px 10px;
     }
-    .beerList:nth-child(2) > select {
+    .beerList > select {
         color: #707070;
         font-size: 25px;
-    }
-    .beerList:nth-child(3) {
-        display: none;
     }
     .beerBottle {
         grid-column: 1/3;
