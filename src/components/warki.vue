@@ -91,7 +91,7 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 .warkiPage {
     display: grid;
     grid-template-columns: max-content max-content auto auto;
-    grid-template-rows: auto min-content minmax(220px, min-content);
+    grid-template-rows: auto minmax(220px, min-content);
 }
 
 .empty {
@@ -104,7 +104,7 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
     display: grid;
     grid-column: 1/2;
     grid-row: 1/4;
-    max-height: 500px;
+    height: 500px;
     overflow-y: auto;
     border: solid 2px #FA9C1E;
     margin: 0 10px 10px 10px;
@@ -182,10 +182,10 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-3 
 }
 
 .articleButton {
-    margin: auto 0 0 auto;
+    margin: 10px 0 0 auto;
 }
 
-@media (max-width: 715px) {
+@media (max-width: 740px) {
     .empty {
         grid-row: 2/5;
     }
