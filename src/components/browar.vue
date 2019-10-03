@@ -3,7 +3,7 @@
         <div class="articleTitle">BROWAR DOMOWY</div>
         <div class="empty"></div>
         <div class="articleImg"><img src="../assets/tank.png"></div>
-        <div class="articleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit elit, gravida sed ullamcorper sollicitudin, mollis ac ante. Suspendisse nec justo vitae ipsum sodales vehicula eget nec augue. Proin tempus, sem et tincidunt suscipit, augue nunc dictum ipsum, sit amet tempus orci ante non ligula. Integer vitae euismod odio, vel elementum ligula. Nam non condimentum urna, ac aliquam mauris.</div>
+        <div class="articleDesc">Zapraszam do browaru! Czyli zobacz, na czym można uwarzyć piwo! Choć „browar” to może zbyt duże słowo, to z przymiotnikiem „domowy” nabiera całkiem innego znaczenia.<br><br>W tym dziale opisane zostały wszystkie najważniejsze „sprzęty piwowarskie” jakich używam. Niektóre z nich są absolutnie niezbędne, a niektóre przydają się tylko w określonych warunkach. Opis przydatny zwłaszcza dla początkujących piwowarów!</div>
         <template class="equipContent" v-for="equi in equiList">
             <div class="equipDesc" :key="equi.id + 'B'">
                 <strong>{{ equi.title + ":" }}</strong><br>
@@ -188,6 +188,18 @@ export default {
 
     .equipDesc:nth-of-type(4n-1) {
         grid-column: 1/-1;
+    }
+}
+
+@media (max-width: 450px) {
+    .empty {
+        display: none
+    }
+    .articleDesc {
+        grid-column: 1/-1;
+    }
+    .articleImg {
+        grid-row: 1/2;
     }
 }
 </style>

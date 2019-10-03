@@ -18,14 +18,14 @@
                 <div class="articleImg"><img src="../assets/paper.png"></div>
                 <div class="articleTitle">SPRAWDŹ NASZE RECEPTURY!</div>
                 <div class="articleContent">
-                    <span class="articleText">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nisi nec eros suscipit mattis at et sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. d nisl egestas, cursus dolor rhoncus, mattis elit. <br><br>Maecenas et ullamcorper lacus, nec laoreet nulla. Sed augue nulla, dapibus sed massa vitae, efficitur dapibus turpis. Phasellus sit amet metus nunc.'</span>
+                    <span class="articleText">Wiedzą należy się dzielić! Stąd też w poniższym dziale opublikowane zostały receptury wszystkich piw, jakie uwarzone zostały w niniejszym browarze domowym. Niektóre z nich są autorskie, natomiast większość z uwagi na początki inspirowana była różnymi, opublikowanymi w internecie przepisami. Natomiast szczegółowy przebieg warzenia to już wypadkowa nabytych prze ze mnie umiejętności.<br><br>Starałem się opisać jak najwięcej szczegółów, natomiast w przypadku pytań zapraszam do kontaktu. Udanych warek!</span>
                     <router-link to="/receptury" tag="div" class="articleButton">Więcej...</router-link>
                 </div>
             </div>
             <div class="mainArticle">
                 <div class="equipTitle">SPRAWDZONY SPRZĘT!</div>
                 <div class="equipContent">
-                    <span class="articleText">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a nisi nec eros suscipit mattis at et sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. d nisl egestas, cursus dolor rhoncus, mattis elit. <br><br>Maecenas et ullamcorper lacus, nec laoreet nulla. Sed augue nulla, dapibus sed massa vitae, efficitur dapibus turpis. Phasellus sit amet metus nunc.'</span>
+                    <span class="articleText">Zapraszam do browaru! Czyli zobacz, na czym można uwarzyć piwo! Choć „browar” to może zbyt duże słowo, to z przymiotnikiem „domowy” nabiera całkiem innego znaczenia.<br><br>W tym dziale opisane zostały wszystkie najważniejsze „sprzęty piwowarskie” jakich używam. Niektóre z nich są absolutnie niezbędne, a niektóre przydają się tylko w określonych warunkach. Opis przydatny zwłaszcza dla początkujących piwowarów!</span>
                     <router-link to="/browar" tag="div" class="articleButton">Więcej...</router-link>
                 </div>
                 <div class="equipImg"><img src="../assets/pot.png"></div>
