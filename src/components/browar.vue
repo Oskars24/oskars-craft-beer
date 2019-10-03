@@ -9,25 +9,54 @@
                 <strong>{{ equi.title + ":" }}</strong><br>
                 {{ equi.description }}
             </div>
-            <div class="equipImg" :key="equi.id">
+            <div class="equipImg" :key="equi.id" @click="pictSelect(equi.id)">
                 <img :src="equiSrc(equi.id)">
             </div>
         </template>
+        <lightbox :pictList="equiList" :path="path" :extension="extension" :selected="selected" :show="show" @close="close" @prev="prev" @next="next"/>
     </div>
 </template>
 
 <script>
+import lightbox from "./lightbox.vue";
+
 export default {
     name: 'browar',
     data () {
         return {
-            equiList: require("@/content/equipment/equipment.json")
+            equiList: require("@/content/equipment/equipment.json"),
+            path: "content/equipment/equi_",
+            extension: ".png",
+            selected: 1,
+            show: false
         }
     },
     methods: {
         equiSrc: function(number) {
-            return require("@/content/equipment/thumbs/equi_"+number+".png")
+            return require("@/content/equipment/thumbs/equi_"+number+".jpg")
+        },
+        pictSelect(id) {
+            this.selected=id,
+            this.show=true
+        },
+        close(value) {
+            this.show=value
+        },
+        prev() {
+            this.selected--
+            if(this.selected < 1) {
+                this.selected=this.equiList.length
+            }
+        },
+        next() {
+            this.selected++
+            if(this.selected > this.equiList.length) {
+                this.selected=1
+            }
         }
+    },
+    components: {
+        lightbox
     }
 }
 </script>
@@ -81,6 +110,8 @@ export default {
 
 .equipImg > img {
     width: 100%;
+    box-sizing: border-box;
+    border: solid 2px white;
 }
 
 .equipImg:nth-of-type(4n-2) {

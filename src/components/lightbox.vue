@@ -24,6 +24,12 @@ export default {
                 return []
             }
         },
+        path: {
+            type: String,
+        },
+        extension: {
+            type: String,
+        },
         selected: {
             type: Number,
             default: 1,
@@ -35,12 +41,12 @@ export default {
     },
     data() {
         return {
-            listLength: this.pictList.length
+            listLength: this.pictList.length,
         }
     },
     methods: {
         fullImage(number) {
-            return require("@/content/gallery/photo_"+number+".jpg")
+            return require("@/"+this.path+number+this.extension)
         },
         close: function() {
             this.$emit("close", false)
@@ -117,11 +123,13 @@ export default {
 }
 
 .imgDiv {
-    height: 95vh;
+    max-height: 95vh;
 }
 
 .imgDiv > img {
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 95vh;
     transition: all 0.2s linear;
 }
 

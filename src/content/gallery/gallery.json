@@ -1,116 +1,154 @@
 [
   {
-    "id": 1
+    "id": 1,
+    "title": "Przygotowywanie ekstraktu"
   },
   {
-    "id": 2
+    "id": 2,
+    "title": "Sprzęt przygotowany"
   },
   {
-    "id": 3
+    "id": 3,
+    "title": "Otwarcie pierwszego ekstraktu"
   },
   {
-    "id": 4
+    "id": 4,
+    "title": "Oczekiwanie na temperaturę"
   },
   {
-    "id": 5
+    "id": 5,
+    "title": "Wlewanie ekstraktu"
   },
   {
-    "id": 6
+    "id": 6,
+    "title": "Brzeczka in progress"
   },
   {
-    "id": 7
+    "id": 7,
+    "title": "Nic nie może się zmarnować"
   },
   {
-    "id": 8
+    "id": 8,
+    "title": "Dolewamy reztki"
   },
   {
-    "id": 9
+    "id": 9,
+    "title": "Otwarcie drożdży"
   },
   {
-    "id": 10
+    "id": 10,
+    "title": "Szykujemy starter drożdżowy"
   },
   {
-    "id": 11
+    "id": 11,
+    "title": "Podgrzewanie brzeczki"
   },
   {
-    "id": 12
+    "id": 12,
+    "title": "Rehydratacja drożdży"
   },
   {
-    "id": 13
+    "id": 13,
+    "title": "Piewsze gotowanie"
   },
   {
-    "id": 14
+    "id": 14,
+    "title": "Wlewamy wodę"
   },
   {
-    "id": 15
+    "id": 15,
+    "title": "Jeszcze więcej wody"
   },
   {
-    "id": 16
+    "id": 16,
+    "title": "'Chłodzimy brzeczkę'"
   },
   {
-    "id": 17
+    "id": 17,
+    "title": "Fermentor w gotowości"
   },
   {
-    "id": 18
+    "id": 18,
+    "title": "Tyle będzie piwa"
   },
   {
-    "id": 19
+    "id": 19,
+    "title": "Drożdże uwodnione"
   },
   {
-    "id": 20
+    "id": 20,
+    "title": "Dodajemy drożdże"
   },
   {
-    "id": 21
+    "id": 21,
+    "title": "Zamieszać nei zaszkodzi"
   },
   {
-    "id": 22
+    "id": 22,
+    "title": "Zamykamy szczelnie"
   },
   {
-    "id": 23
+    "id": 23,
+    "title": "Ustawiamy rurkę fermentacyjną"
   },
   {
-    "id": 24
+    "id": 24,
+    "title": "Woda już w rurce"
   },
   {
-    "id": 25
+    "id": 25,
+    "title": "Pierwsza brzeczka nastawiona"
   },
   {
-    "id": 26
+    "id": 26,
+    "title": "Teraz tylko czekać"
   },
   {
-    "id": 27
+    "id": 27,
+    "title": "Pierwsze piwo z ekstraktów"
   },
   {
-    "id": 28
+    "id": 28,
+    "title": "Pierwsze piwo zabutelkowane"
   },
   {
-    "id": 29
+    "id": 29,
+    "title": "Pomiar BLG Witbira"
   },
   {
-    "id": 30
+    "id": 30,
+    "title": "Rehydratacja w toku"
   },
   {
-    "id": 31
+    "id": 31,
+    "title": "Pomiar BLG Stauta"
   },
   {
-    "id": 32
+    "id": 32,
+    "title": "Witbier przed i po fermentacji"
   },
   {
-    "id": 33
+    "id": 33,
+    "title": "Mieści 11 butelek :)"
   },
   {
-    "id": 34
+    "id": 34,
+    "title": "Własne kapsle homemade"
   },
   {
-    "id": 35
+    "id": 35,
+    "title": "Pomiar BLG"
   },
   {
-    "id": 36
+    "id": 36,
+    "title": "Zacieramy"
   },
   {
-    "id": 37
+    "id": 37,
+    "title": "Pomiar BLG"
   },
   {
-    "id": 38
+    "id": 38,
+    "title": "Bohemskie ciemne!"
   }
 ]

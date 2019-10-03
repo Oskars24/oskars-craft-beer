@@ -694,4 +694,20 @@ option:checked {
     right: 0;
     transform: translateY(-50%) rotate(-135deg);
 }
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 4px;
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar {
+	width: 4px;
+	background-color: transparent;
+}
+
 </style>
