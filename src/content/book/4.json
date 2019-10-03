@@ -23,7 +23,7 @@
         ],
     "chmielenie": [
         "Citra - 7g na 55 min",
-        "Citra - 8g ba 15 min",
+        "Citra - 8g na 15 min",
         "Citra - 15g przy wyłączeniu palnika"
         ],
     "fermentacja": [
@@ -34,5 +34,23 @@
         "Refermentacja 70g glukozy",
         "BLG końcowe - 2,5 BLG"
         ],
-    "przepis": ["W opracowaniu"]
+    "przepis": [
+        "Do garnka o pojemności 30 l wlać 7 l wody.",
+        "Podgrzewamy do temp. ok. 69°C i wsypujemy ześrutowane słody.",
+        "Ustalamy temperaturę na 68°C i utrzymujemy 60 min.",
+        "W drugim garnku zaczynamy grzać wodę do wysładzania do 78°C.",
+        "Przeprowadzamy próbę jodową i decydujemy czy zacierać dalej.",
+        "Podgrzewamy zacier do 78°C i przenosimy do filtracji (izolacja kadzi kocem).",
+        "Czekamy ok. 30 min, aż złoże się ułoży.",
+        "Wysładzamy powoli wodą ok. 76°C do uzyskania ok. 12l brzeczki.",
+        "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 20°C.",
+        "Gotujemy brzeczkę przez 60 min: a) W 5 min gotowania dodajemy 7g chmielu Citra. b) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. c) W 45 min dodajemy 8g chmielu Citra. d) W 55 min wkładamy chłodnicę do brzeczki. e) W 60 min dodajemy 15g chmielu Citra i wyłączamy palnik.",
+        "Robimy starter drożdżowy, czyli dodajemy drożdży do przygotowanej wody.",
+        "Zaczynamy chłodzenie przy minimalnym ciśnieniu wody.",
+        "Pobieramy próbkę ok. 100 ml, ogrzewamy do 20°C i mierzymy BLG.",
+        "Chłodzimy brzeczkę do ok. 17-18°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże.",
+        "Fermentujemy przez ok. 12-14 dni w temperaturze 17-19°C, a następnie mierzymy BLG.",
+        "Jeśli BLG nie spada to butelkujemy.",
+        "Refermentujemy glukozą w ilości 8g na każde 0,5l piwa."
+        ]
 }

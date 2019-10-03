@@ -47,23 +47,27 @@
         "Uzyskano 31 butelek 0,5l i 10 butelek 0,33l (razem 18,8l)"
         ],
     "przepis": [
-        "Do garnka o pojemności 30 l wlać 12l wody i wsypać ześrutowane słody.",
+        "Do garnka o pojemności 30 l wlać 12 l wody i wsypać ześrutowane słody.",
         "Ustalamy temperaturę na 52°C i czekamy 10 min.",
         "Podgrzewamy zacier na 67°C i utrzymujemy przez 45 min.",
-        "W drugim garnku zaczynamy grzać wodę do wysładzania do 78°C.",
+        "W drugim garnku zaczynamy grzać wodę do wysładzania do 76°C.",
         "Podnosimy temperaturę do 74°C i utrzymujemy przez 10min.",
         "Przeprowadzamy próbę jodową i decydujemy czy zacierać dalej.",
-        "Podgrzewamy zacier do 78°C i przenosimy do filtracji.",
-        "Czekamy ok. 30min (aż złoże się ułoży).",
-        "Wysładzamy powoli wodą 78°C do uzyskania ok. 24l brzeczki.",
+        "Podgrzewamy zacier do 78°C i przenosimy do filtracji (izolacja kadzi kocem).",
+        "Czekamy ok. 30 min, aż złoże się ułoży.",
+        "Wysładzamy powoli wodą 76°C do uzyskania 24l brzeczki.",
         "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 20°C.",
-        "Gotujemy brzeczkę przez 60 min: a) W 30 min dodajemy 30g chmielu Rakau. b) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. c) W 50 min wkładamy chłodnicę do brzeczki.",
-        "Robimy starter drożdżowy (dodajemy drożdże do przygotowanej wcześniej wody).",
+        "Gotujemy brzeczkę przez 70 min: a) W 30 min dodajemy 30 g chmielu Rakau. b) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. c) W 60 min wkładamy chłodnicę do brzeczki.",
+        "Robimy starter drożdżowy, czyli dodajemy drożdży do przygotowanej wody.",
         "Zaczynamy chłodzenie przy minimalnym ciśnieniu wody.",
-        "Przy 80°C dodajemy 35g chmielu Rakau.",
-        "Chłodzimy brzeczkę do 17°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże: a) przed dodaniem drożdży pobieramy próbkę i mierzymy BLG.",
+        "Przy 80°C dodajemy 35 g chmielu Rakau.",
+        "Pobieramy próbkę 100 ml, ogrzewamy do 20°C i mierzymy BLG.",
+        "Chłodzimy brzeczkę do 17°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże.",
         "Fermentujemy przez ok. 7 dni, a następnie mierzymy BLG.",
-        "Jeśli BLG jest odpowiednio niskie przelewamy na cichą i zostawiamy na kolejne 7 dni. a) Po 4 dniach dodajemy pozostałe 35g chmielu Rakau. b) Po 3 dniach mierzymy BLG i decydujemy czy fermentować dalej.",
-        "Jeśli BLG jest odpowiednio niskie butelkujemy."
+        "Jeśli BLG jest odpowiednio niskie przelewamy na cichą i zostawiamy na kolejne 7 dni.",
+        "Po 4 dniach dodajemy pozostałe 35 g chmielu Rakau.",
+        "Po 3 dniach mierzymy BLG i decydujemy czy fermentować dalej.",
+        "Jeśli BLG nie spada to butelkujemy.",
+        "Refermentujemy glukozą w ilości 7g na każde 0,5l piwa."
         ]
 }

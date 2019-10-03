@@ -28,9 +28,10 @@
         "Wysładzanie wodą o temp. ok. 76°C"
         ],
     "chmielenie": [
-        "Mosaic - 5g na 5min",
-        "Ekuanot - 25g przy wyłączeniu palnika",
-        "Mosaic - 25g na cichą fermentację"
+        "Mosaic - 15g na 5min",
+        "Ekuanot - 15g przy wyłączeniu palnika",
+        "Mosaic - 35g na cichą fermentację",
+        "Ekuanot - 35g na cichą fermentację"
         ],
     "fermentacja": [
         "Burzliwa 2-3 dni w temp. ok 20°C",
@@ -42,5 +43,28 @@
         "BLG końcowe 5 BLG",
         "Refermentacja 140g glukozy"
         ],
-    "przepis": ["W opracowaniu"]
+    "przepis": [
+        "Do garnka o pojemności 30 l wlać  7l wody i wsypać płatki pszeniczne oraz owsiane.",
+        "Podgrzewamy wolno do wrzenia, ciągle mieszając i gotujemy ok. 10 min.",
+        "Dolewamy ok. 5l zimnej wody i ustalamy temperaturę na 70°C",
+        "Wsypujemy słody i utrzymujemy temperaturę 66-68°C przez 40min.",
+        "Podgrzewamy zacier na 72°C i utrzymujemy przez ok. 10 min.",
+        "W drugim garnku zaczynamy grzać wodę do wysładzania do 78°C.",
+        "Przeprowadzamy próbę jodową i decydujemy czy zacierać dalej.",
+        "Podgrzewamy zacier do 78°C i przenosimy do filtracji (izolacja kadzi kocem)",
+        "Czekamy ok. 30 min, aż złoże się ułoży.",
+        "Wysładzamy powoli wodą ok. 76°C do uzyskania ok. 23l brzeczki.",
+        "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 20°C.",
+        "Gotujemy brzeczkę przez 60 min: b) W 55 min dodajemy 15 g chmielu Mosaic oraz laktozę. c) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. d) W 60 min wkładamy chłodnicę do brzeczki i 15g chmielu Ekuanot.",
+        "Robimy starter drożdżowy, czyli dodajemy drożdży do przygotowanej wody.",
+        "Zaczynamy chłodzenie przy minimalnym ciśnieniu wody.",
+        "Pobieramy próbkę ok. 100 ml,  ogrzewamy do 20°C i mierzymy BLG.",
+        "Chłodzimy brzeczkę do ok. 17°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże.",
+        "Fermentujemy przez ok. 2-3 dni w temperaturze 18-20°C, a następnie dodajemy przecier z mango i suszoną pomarańczę.",
+        "Fermentujemy kolejne 10 dni w temp. Ok 20°C, po czym mierzymy BLG.",
+        "Jeśli BLG jest odpowiednio niskie przelewamy na cichą, dodajemy pozostałe 35g chmielu Mosaic oraz 35g chmielu Ekuanot i zostawiamy na ok. 2-4 dni.",
+        "Po 2 dniach mierzymy BLG i decydujemy czy fermentować dalej.",
+        "Jeśli BLG nie spada to butelkujemy.",
+        "Refermentujemy glukozą w ilości 7g na każde 0,5l piwa."
+        ]
 }

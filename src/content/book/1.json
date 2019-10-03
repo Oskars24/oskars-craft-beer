@@ -19,11 +19,26 @@
     "zacieranie": ["-"],
     "chmielenie": ["-"],
     "fermentacja": [
-        "3 dni w temp. 23°C"],
+        "11 dni w temp. 23°C"],
     "notatki": [
         "Fermentacja intensywna przez pierwsze 3 dni",
         "Drożdże zadano w temp. 30°C",
         "Refermentacja 110g glukozy"
         ],
-    "przepis": ["W opracowaniu"]
+    "przepis": [
+        "W garnku o pojemności ok. 5-8l rozrabiamy BA brew-kit PLUS z zimną wodą",
+        "Dodajemy ekstrakt dokładnie mieszając.",
+        "Puszkę po ekstrakcie można opłukać gorącą wodą i również wlać do garnka.",
+        "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 20°C.",
+        "Gotujemy podgrzewamy brzeczkę przez ok 60 min i gotujemy przez 5 min.",
+        "W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną.",
+        "Robimy starter drożdżowy, czyli dodajemy drożdży do przygotowanej wody.",
+        "Przenosimy brzeczkę do fermentora i uzupełniamy zimną wodą do 20l.",
+        "Temperatura powinna ustalić się na poziomie ok. 26-30°C.",
+        "Dodajemy drożdże i zamykamy fermentor.",
+        "Fermentację prowadzimy przez ok. 11 dni w temp. ok. 23°C.",
+        "Po 1 dniach mierzymy BLG i decydujemy czy fermentować dalej.",
+        "Jeśli BLG nie spada to butelkujemy.",
+        "Refermentujemy glukozą w ilości 6g na każde 0,5l piwa."
+        ]
 }

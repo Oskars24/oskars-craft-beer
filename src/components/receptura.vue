@@ -33,7 +33,7 @@
             </ol>
         </div>
         <div class="buttonLine">
-            <div class="articleButton">Pobierz PDF</div>
+            <a :href="pdfFile" :download="'[' + beerData.id + '] Oskar\'s recipe - ' + beerData.title" class="articleButton">Pobierz PDF</a>
         </div>
     </div>
 </template>
@@ -53,6 +53,9 @@ export default {
         labelSrc: function() {
             return require("@/content/labels/label_"+this.beerSelected+".jpg")
         },
+        pdfFile() {
+            return require("@/content/book/pdf/recipe_"+this.beerSelected+".pdf")
+        }
     }
 }
 </script>
@@ -123,6 +126,7 @@ ul > li:before {
     background-color: #FBB049;
     margin-top: 10px;
     padding: 10px 0 10px 0;
+    text-align: center;
 }
 
 .articleButton {

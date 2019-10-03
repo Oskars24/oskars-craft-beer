@@ -31,6 +31,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.pdf$/,
+        use: 'url-loader',
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig

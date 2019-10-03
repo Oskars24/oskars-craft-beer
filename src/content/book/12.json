@@ -10,14 +10,14 @@
     "miejsce": "Przemyśl",
     "uzyskano": "19l piwa z 23l brzeczki",
     "opis": "Ulepszona wersja witbiera na świeżej pomarańczy. Ponownie użyta świeżo starta skórka grejpfruta i pomarańczy stworzyła cytrusową bombę aromatyczną. Dodatkowo chmielone na zimno lubelskim chmielem zyskało charakteru. Jeszcze bardziej orzeźwiające, bardzo jasne, średnio nasycone i o wysokiej pianie. Idealnie wyważone, aksamitne, z symbolicznie zaznaczoną goryczką.",
-    "sklad": "słód pilzneński premium (extra jasny) Wayermann, płatki pszeniczne, płątki owsiane, chmiel Citra, świeża skórka pomarańczy i grejfruta, kolendra indyjska",
+    "sklad": "słód pilzneński premium (extra jasny) Wayermann, płatki pszeniczne, płątki owsiane, chmiel Citra, świeża skórka pomarańczy i grejpfruta, kolendra indyjska",
     "surowce": [
         "Słód pilzneński premium (extra jasny) Wayermann - 2,0 kg",
         "Płatki pszeniczne - 1,4 kg",
         "Płatki owsiane - 0,4 kg",
         "Chmiel Citra - 50 g",
         "Lubelski - 20 g",
-        "Świeża skórka z 1 grejfruta czerwonego (bez albedo) - ok. 60 g",
+        "Świeża skórka z 1 grejpfruta czerwonego (bez albedo) - ok. 60 g",
         "Świeża skórka z 6 pomarańczy deserowych (bez albedo) - ok. 300 g",
         "Łuska ryżowa sterylizowana - 100 g",
         "Kolendra indyjska - 20 g",
@@ -29,7 +29,8 @@
         "Wysładzanie wodą o ok. 78°C"
         ],
     "chmielenie": [
-        "Citra - 25g na 15 min"
+        "Citra - 25g na 15 min",
+        "Lubelski - 20g na cichą"
         ],
     "fermentacja": [
         "Burzliwa 12 dni w 18-19°C",
@@ -42,5 +43,28 @@
         "BLG końcowe - 1, BLG",
         "Refermentacja z 135g glukozy rozpuszczonej w 0,4l wody"
         ],
-    "przepis": ["W opracowaniu"]
+    "przepis": [
+        "Do garnka o pojemności 30 l wlać 7 l wody i wsypać płatki pszeniczne oraz owsiane.",
+        "Podgrzewamy wolno do wrzenia i gotujemy ok. 10 min.",
+        "Dolewamy ok. 5l zimnej wody i wsypujemy ześrutowane słody.",
+        "Ustalamy temperaturę na 63°C i utrzymujemy 60 min.",
+        "Łuskę ryżową namaczamy w ciepłej wodzie.",
+        "Podgrzewamy zacier na 72°C i utrzymujemy przez ok. 30 min.",
+        "W drugim garnku zaczynamy grzać wodę do wysładzania do 78°C.",
+        "Przeprowadzamy próbę jodową i decydujemy czy zacierać dalej.",
+        "Podgrzewamy zacier do 78°C i przenosimy do filtracji, układając namoczoną łuskę ryżową na dnie kadzi filtracyjnej (izolacja kadzi kocem).",
+        "Czekamy ok. 30 min, aż złoże się ułoży.",
+        "Wysładzamy powoli wodą ok. 76°C do uzyskania ok. 23l brzeczki.",
+        "Gotujemy szklankę wody na starter drożdżowy, przykrywamy folią aluminiową i chłodzimy do ok. 20°C.",
+        "Gotujemy brzeczkę przez 60 min: a) Ścieramy skórkę pomarańczy oraz grejpfruta zwracając uwagę żeby nie zetrzeć białego albedo. b) W 45 min dodajemy 25 g chmielu Citra. c) W międzyczasie dezynfekujemy fermentor i rurkę fermentacyjną. d) W 55 min wkładamy chłodnicę do brzeczki i dodajemy rozdrobnioną kolendrę oraz starte skórki cytrusów.",
+        "Robimy starter drożdżowy, czyli dodajemy drożdży do przygotowanej wody.",
+        "Zaczynamy chłodzenie przy minimalnym ciśnieniu wody.",
+        "Pobieramy próbkę ok. 100 ml, ogrzewamy do 20°C i mierzymy BLG.",
+        "Chłodzimy brzeczkę do ok. 18°C, przelewamy do fermentora (napowietrzamy) i dodajemy drożdże.",
+        "Fermentujemy przez ok. 12 dni w temperaturze 18-19°C, a następnie mierzymy BLG.",
+        "Jeśli BLG jest odpowiednio niskie przelewamy na cichą, dodajemy 20g chmielu Lubelskiego i zostawiamy na kolejne 9 dni.",
+        "Po 3 dniach mierzymy BLG i decydujemy czy fermentować dalej.",
+        "Jeśli BLG nie spada to butelkujemy.",
+        "Refermentujemy glukozą w ilości 7g na każde 0,5l piwa."
+        ]
 }
