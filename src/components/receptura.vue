@@ -54,7 +54,7 @@ export default {
             return require("@/content/labels/label_"+this.beerSelected+".jpg")
         },
         pdfFile() {
-            return require("@/content/book/pdf/recipe_"+this.beerSelected+".pdf")
+            return "./static/recipe_"+this.beerSelected+".pdf"
         }
     }
 }

@@ -26,7 +26,7 @@ export default {
         return {
             equiList: require("@/content/equipment/equipment.json"),
             path: "content/equipment/equi_",
-            extension: ".png",
+            extension: ".jpg",
             selected: 1,
             show: false
         }
