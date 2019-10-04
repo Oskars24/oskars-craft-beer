@@ -1,1 +1,5 @@
-module.exports = { baseUrl: '/oskars-craft-beer/' }
+module.exports = {
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/oskars-craft-beer/'
+      : '/'
+  }
