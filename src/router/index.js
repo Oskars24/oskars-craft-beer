@@ -7,10 +7,11 @@ import receptura from '@/components/receptura'
 import galeria from '@/components/galeria'
 import browar from '@/components/browar'
 import kontakt from '@/components/kontakt'
+import check from '@/components/check'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   base: "/oskars-craft-beer/", // tylko w przypadku migracji na github pages
   scrollBehavior() {
     return { x: 0, y: 0 };
@@ -50,6 +51,23 @@ export default new Router({
       path: '/kontakt',
       name: 'kontakt',
       component: kontakt
+    },
+    {
+      path: '/check',
+      name: 'check',
+      component: check
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+    if (window.localStorage.getItem("check") || to.path === "/check") {
+        next();
+    }
+    else {
+        next('/check')
+    }
+    
+});
+
+export default router;
