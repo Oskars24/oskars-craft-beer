@@ -52,7 +52,6 @@ transform: translateY(7px) translateX(calc((var(--globalWidth) - 200px) / 12*-1 
     width: 140px;
     margin: 5px 5px 0 5px;
     text-align: center;
-    background-color: white;
     border: solid 2px transparent;
     padding: 20px 10px 10px 10px;
 }

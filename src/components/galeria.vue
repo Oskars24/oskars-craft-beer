@@ -61,7 +61,7 @@ export default {
 <style scoped>
 .galleryPage {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
     color: #707070
 }
@@ -77,6 +77,7 @@ export default {
 .pictLabel:hover {
     background-color: #FAA432;
     border: solid 2px #fff152;
+    z-index: 1;
 }
 
 .pictLabel:hover > .pictTitle {

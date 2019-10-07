@@ -18,7 +18,7 @@
                 <div class="articleImg"><img src="../assets/paper.png"></div>
                 <div class="articleTitle">SPRAWDŹ NASZE RECEPTURY!</div>
                 <div class="articleContent">
-                    <span class="articleText">Wiedzą należy się dzielić! Stąd też w poniższym dziale opublikowane zostały receptury wszystkich piw, jakie uwarzone zostały w niniejszym browarze domowym. Niektóre z nich są autorskie, natomiast większość z uwagi na początki inspirowana była różnymi, opublikowanymi w internecie przepisami. Natomiast szczegółowy przebieg warzenia to już wypadkowa nabytych prze ze mnie umiejętności.<br><br>Starałem się opisać jak najwięcej szczegółów, natomiast w przypadku pytań zapraszam do kontaktu. Udanych warek!</span>
+                    <span class="articleText">Wiedzą należy się dzielić! Stąd też w poniższym dziale opublikowane zostały receptury wszystkich piw, jakie uwarzone zostały w niniejszym browarze domowym. Niektóre z nich są autorskie, natomiast większość z uwagi na początki inspirowana była różnymi, opublikowanymi w internecie przepisami. Natomiast szczegółowy przebieg warzenia to już wypadkowa nabytych przeze mnie umiejętności.<br><br>Starałem się opisać jak najwięcej szczegółów, natomiast w przypadku pytań zapraszam do kontaktu. Udanych warek!</span>
                     <router-link to="/receptury" tag="div" class="articleButton">Więcej...</router-link>
                 </div>
             </div>

@@ -117,6 +117,7 @@ export default {
 
 body {
   margin: 0;
+  -webkit-tap-highlight-color: transparent; 
 }
 
 .all {
