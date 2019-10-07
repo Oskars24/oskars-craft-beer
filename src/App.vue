@@ -579,7 +579,7 @@ a:active {
         display: block;
     }
 
-    .glass, .footerSection:nth-child(3), .beerNav > .headerLogo {
+    .glass, .footerSection:nth-child(2), .beerNav > .headerLogo {
         display: none;
     }
     .beerNav {

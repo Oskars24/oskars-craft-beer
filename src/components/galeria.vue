@@ -33,13 +33,13 @@ export default {
         close(value) {
             this.show=value
         },
-        prev() {
+        next() {
             this.selected--
             if(this.selected < 1) {
                 this.selected=this.pictList.length
             }
         },
-        next() {
+        prev() {
             this.selected++
             if(this.selected > this.pictList.length) {
                 this.selected=1
